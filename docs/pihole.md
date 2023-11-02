@@ -1,8 +1,3 @@
-
-layout: page
-title: Pi-hole & Unbound Setup Using Docker Compose
-permalink: /pihole
-
 # Pi-hole & Unbound Setup Using Docker Compose
 
 ## Background
