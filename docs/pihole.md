@@ -1,5 +1,16 @@
 # Pi-hole & Unbound Setup Using Docker Compose
 
+## Article Sections
+- [Background](#background)
+- [DNS Resolver CheatSheet](#dns-resolver-cheatsheet)
+- [Prerequiste Installation](#prerequiste-installation)
+    - [Docker & Docker Compose](#docker--docker-compose)
+- [Running PiHole & Unbound (Linux / Mac OS)](#running-pihole--unbound-linuxmac-os)
+    - [Ubuntu Additional Steps](#ubuntu-additional-steps)
+- [More Useful Resources & Articles](#more-useful-resources--articles)
+    - [Resources](#resources)
+    - [Articles](#articles)
+
 ## Background
 
 [Pi-hole](https://docs.pi-hole.net/) is a DNS sinkhole that is effective at blocking ads and malware by closing connections to blacklisted domains before a client can connect to them. [Unbound](https://nlnetlabs.nl/projects/unbound/about/) is a validating, recursive, caching DNS resolver that increase the privacy of its users.
