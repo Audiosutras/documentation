@@ -162,7 +162,7 @@ Restart NetworkManager
 $ sudo systemctl restart NetworkManager
 ```
 
-Now we can proceed back to step 2 in [Running PiHole & Unbound](#running-pihole--unbound).
+Now we can proceed back to step 2 in [Running PiHole & Unbound](#running-pihole--unbound-linuxmac-os).
 
 ## More Useful Resources & Articles
 
