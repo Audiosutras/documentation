@@ -19,7 +19,6 @@ The table below documents the port and internal IP address of custom dns resolve
 | DNS Resolver | Internal IP Address |
 | ------- | ------------------- |
 | Unbound | 10.1.1.3#53         |
-| Cloudflared | 10.1.1.4#5053   |
 
 ## Prerequiste Installation
 
@@ -44,46 +43,26 @@ If nothing was returned when running the above commands follow docker's recommen
 
 ## Running PiHole & Unbound (Linux/Mac OS)
 
-- Clone this repository
+- Download the [latest release](https://github.com/Audiosutras/pihole-dockercompose/releases) (Currently `v1.0.0`)
 
-    ```
-    # linux/mac commands
-
-    # Using https. Use SSH if contributing to the project 
-    $ git clone https://github.com/Audiosutras/pihole-unbound-dockercompose.git
-
-    # make pihole-unbound-dockercompose our working directory
-    $ cd pihole-unbound-dockercompose
+    ```bash
+        $ wget https://github.com/Audiosutras/pihole-dockercompose/archive/refs/tags/v1.0.0.tar.gz
+        $ tar -xvf v1.0.0.tar.gz
+        $ rm v1.0.0.tar.gz && cd pihole-dockercompose-1.0.0
     ```
 
-- Download repository as a zip file
-
-    ```
-    # linux/mac commands
-
-    # download zip file of master branch
-    $ wget -O pihole-unbound-dockercompose-master.zip https://github.com/Audiosutras/pihole-unbound-dockercompose/archive/refs/heads/master.zip
-
-    # unzip the zip file
-    $ unzip pihole-unbound-dockercompose-master.zip
-
-    # make pihole-unbound-dockercompose our working directory
-    $ cd pihole-unbound-dockercompose-master
-    ```
 
 1. Create an `.env` file in the same directory as the `docker-compose.yml` file
 
-    ```
-    # linux/mac commands
-
+    ```bash
     $ ls
     docker-compose.yml  READMe.md
-
-    # opens nano editor
-    $ touch .env && sudo nano .env
+    $ touch .env && sudo nano .env # opens nano editor
     ```
 
-    Copy & Paste the code block below. Replace `<super secret password for logging into pihole dashboard>` with your password. Also select your current 
+    Copy & Paste the code block below into the `nano editor`.
+    - Replace `<super secret password for logging into pihole dashboard>` with your password.
+    - Replace `<timezone>` with your timezone. For example `America/New_York` 
 
     ```.env
     PIHOLE_PWD=<super secret password for logging into pihole dashboard>
@@ -97,7 +76,7 @@ If nothing was returned when running the above commands follow docker's recommen
 
     If you are running this project on Ubuntu (and maybe Fedora) there are [additional steps](#ubuntu-additional-steps) that need to be completed before continuing with step 2.
 
-    ```
+    ```bash
     $ docker-compose up -d
     ```
 
@@ -109,6 +88,7 @@ If nothing was returned when running the above commands follow docker's recommen
     - If wanting to use Pihole on the machine you just installed it on without local 
     network coverage, the IP address you will use for your DNS server is `127.0.0.1` (localhost).
     - For local network coverage, you will need to know the local IP address for the machine you placed Pihole on. Get that on linux by running
+
     ```
         # linux/mac commands
 
@@ -139,39 +119,39 @@ In order to proceed you will need to update `systemd-resolved` or disable it.
 
 - [The Unoffical Solution for the Streets - Disable It](https://askubuntu.com/questions/907246/how-to-disable-systemd-resolved-in-ubuntu).
 
-Here are the steps for the unoffical solution.
+Here are the steps for the unoffical solution
 
-    ```
+```bash
     # The Unoffical Solution for the Streets
-
     $ sudo systemctl disable systemd-resolved
     $ sudo systemctl stop systemd-resolved
     $ sudo nano /etc/NetworkManager/NetworkManager.conf 
-    ```
+```
 
 Add `dns=default` under `[main]` section in `/etc/NetworkManager/NetworkManager.conf`
 
 
-    ```
-    # inside '/etc/NetworkManager/NetworkManager.conf'
- 
-    [main]
-    ...
-    dns=default
-    ```
+```bash
+# inside '/etc/NetworkManager/NetworkManager.conf'
+[main]
+...
+...
+dns=default
+...
+```
 Press `CTRL + X` then `Y` and then `ENTER` to exit the editor.
 
 Delete the sysmlink `/etc/resolv.conf`
 
-    ```
-    $ rm /etc/resolv.conf
-    ```
+```bash
+$ rm /etc/resolv.conf
+```
 
 Restart NetworkManager
 
-    ```
-    $ sudo systemctl restart NetworkManager
-    ```
+``` bash
+$ sudo systemctl restart NetworkManager
+```
 
 Now we can proceed back to step 2 in [Running PiHole & Unbound](#running-pihole--unbound).
 
@@ -188,7 +168,3 @@ Now we can proceed back to step 2 in [Running PiHole & Unbound](#running-pihole-
 - [PiHole Docker - Pi My Life UP](https://pimylifeup.com/pi-hole-docker/)
 - [Run PI Hole In Localhost And Some Extras - Medium](https://thanosmour-tk.medium.com/run-pi-hole-in-localhost-and-some-extras-4b50e76611e6)
 - [How To Install Unbound and Pi-hole in Docker using Docker Compose](https://www.reddit.com/r/docker/comments/rbgrm8/how_to_install_unbound_and_pihole_in_docker_using/)
-
-## Additional Information
-
-See [Wiki](https://github.com/Audiosutras/pihole-unbound-dockercompose/wiki) for additional information
