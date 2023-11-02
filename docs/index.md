@@ -1,4 +1,4 @@
-# Documentation & Tutorials for [chrisdixononcode.dev](https://chrisdixononcode.dev)
+# Documentation Site for [Chris Dixon On Code](https://chrisdixononcode.dev)
 
 ## Table of Contents
 
