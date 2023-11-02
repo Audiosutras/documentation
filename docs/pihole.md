@@ -29,7 +29,7 @@ you plan to run Pihole on. Ensure your machine has at least 4GB of RAM.
 
 To check if `docker` and `docker-compose` is already installed run the following commands from the command line:
 
-```
+```bash
 $ docker --version
 Docker version 24.0.6, build ed223bc
 $ docker-compose --version
@@ -89,9 +89,7 @@ If nothing was returned when running the above commands follow docker's recommen
     network coverage, the IP address you will use for your DNS server is `127.0.0.1` (localhost).
     - For local network coverage, you will need to know the local IP address for the machine you placed Pihole on. Get that on linux by running
 
-    ```
-        # linux/mac commands
-
+    ```bash
         # make sure to write down the first entry in this list
         $ hostname -I
     ```
