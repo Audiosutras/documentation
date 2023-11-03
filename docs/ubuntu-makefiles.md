@@ -2,7 +2,7 @@
 
 ## New Machine Setup
 
-```Makefile
+```.mk
 # Make sure to restart machine after all setup and install rules
 
 # Setup Ubuntu Shell environment 
