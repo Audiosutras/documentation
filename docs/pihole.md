@@ -3,6 +3,8 @@
 ## Article Sections
 - [Background](#background)
 - [DNS Resolver CheatSheet](#dns-resolver-cheatsheet)
+- [Download The Latest Release](#download-the-latest-release)
+    - [CLI Prompted Install](#cli-prompted-install)
 - [Prerequiste Installation](#prerequiste-installation)
     - [Docker & Docker Compose](#docker--docker-compose)
 - [Running PiHole & Unbound (Linux / Mac OS)](#running-pihole--unbound-linuxmac-os)
@@ -31,6 +33,28 @@ The table below documents the port and internal IP address of custom dns resolve
 | ------- | ------------------- |
 | Unbound | 10.1.1.3#53         |
 
+
+## Download The Latest Release
+
+- Download the [latest release](https://github.com/Audiosutras/pihole-dockercompose/releases) (Currently `v1.0.1`)
+
+    ```bash
+        $ wget https://github.com/Audiosutras/pihole-dockercompose/archive/refs/tags/v1.0.1.tar.gz
+        $ tar -xvf v1.0.1.tar.gz
+        $ rm v1.0.1.tar.gz && cd pihole-dockercompose-1.0.1
+    ```
+### CLI Prompted Install
+
+After [downloading the release](#download-the-latest-release) make sure your current working directory is `pihole-dockercompose-1.0.1`.
+
+```bash
+    $ ls
+    $ docker-compose.yml READMe.md Makefile setup.sh
+```
+
+Now run `make setup` from the cli. This command will walk you through installation and setup. This command currently only 
+supports setup on Ubuntu/Debian operating systems. If on make Mac OS you can give this command a shot. Make sure select no when prompted about [Ubuntu Additional Steps](#ubuntu-additional-steps). Continue reading if not using the cli prompted install.
+
 ## Prerequiste Installation
 
 ### Docker & Docker Compose
@@ -54,14 +78,7 @@ If nothing was returned when running the above commands follow docker's recommen
 
 ## Running PiHole & Unbound (Linux/Mac OS)
 
-- Download the [latest release](https://github.com/Audiosutras/pihole-dockercompose/releases) (Currently `v1.0.0`)
-
-    ```bash
-        $ wget https://github.com/Audiosutras/pihole-dockercompose/archive/refs/tags/v1.0.0.tar.gz
-        $ tar -xvf v1.0.0.tar.gz
-        $ rm v1.0.0.tar.gz && cd pihole-dockercompose-1.0.0
-    ```
-
+- [Download the latest release](#download-the-latest-release)
 
 1. Create an `.env` file in the same directory as the `docker-compose.yml` file
 
