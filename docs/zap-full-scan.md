@@ -50,7 +50,7 @@ jobs:
             reports
 ```
 
-2. Below is an example `rules.tsv`. Path: `<root_dir>/.zap/rules.tsv`. If using VSCode make sure to disable using spaces when pressing tabs when editing this file. Github automatically generates a table for `.tsv` and `.csv` files. You'll know VS Code inserted spaces instead of tabs if this file does not render as a table in the Github UI
+2. Below is an example `rules.tsv`. Path: `<root_dir>/.zap/rules.tsv`. If using VSCode make sure to disable using spaces for tabs when editing this file. Github automatically generates a table for `.tsv` and `.csv` files. You'll know VS Code inserted spaces instead of tabs if this file does not render as a table in the Github UI
 
 ```.tsv
 10020	IGNORE	(Missing Anti-clickjacking Header)
