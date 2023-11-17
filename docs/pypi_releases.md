@@ -88,7 +88,7 @@ jobs:
 
 3. Update repo's readme with procedure for running a deployment
 
----
+```md
 1. In `pyproject.toml` *bump* the version number `*.*.*`
 
 2. Create a [git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) with the new version number `*.*.*` you specified in `pyproject.toml`.
@@ -102,6 +102,8 @@ jobs:
 4. *Create* a [release](https://www.toolsqa.com/git/github-releases/) on github. Make sure to select `Tags` from the toggle menu. Select the latest tag (highest version number). Name the release `v*.*.*`. Make sure the version number in `pyproject.toml` syncs up with the release version. *Click* `Publish release`. This will kick off our `release.yml` workflow to publish our package to `pypi`. The release can be seen [here and installed](https://pypi.org/project/getdat/) for production use. Install with:
 ```bash
 -> pipx install getdat
+```
+
 ```
 
 
