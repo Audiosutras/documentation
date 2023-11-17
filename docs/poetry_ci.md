@@ -20,18 +20,15 @@ jobs:
   run_test_suite:
     name: Run Test Suite, Style Guide, & Code Checks
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: [3.11] # Change python version if needed
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Python 3.11 # reflect correct python version. Update name if needed
+      - name: Setup Python 3.11
         uses: actions/setup-python@v4
         with:
-          python-version: ->{{ matrix.python-version }}
+          python-version: 3.11
 
       - name: Install Pipx & Poetry
         run: |

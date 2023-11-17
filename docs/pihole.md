@@ -92,7 +92,7 @@ If nothing was returned when running the above commands follow docker's recommen
     - Replace `<super secret password for logging into pihole dashboard>` with your password.
     - Replace `<timezone>` with your timezone. For example `America/New_York` 
 
-    ```.env
+    ```env
     PIHOLE_PWD=<super secret password for logging into pihole dashboard>
     # Switch With your local TimeZone, ex: PIHOLE_TZ=America/New_York 
     PIHOLE_TZ=<timezone>

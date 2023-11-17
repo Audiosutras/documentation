@@ -2,7 +2,7 @@
 
 1. Below is `security.yml`. Path: `.github/workflows/security.yml`. Make sure to replace `<target>` with the url for the website you are security testing.
 
-```.yml
+```yml
 name: Perform Weekly Security Audit with ZAProxy
 # Use ZAP Proxy to perform a full scan of the production site.
 # Scan automatically opens an issue after completion
@@ -37,13 +37,13 @@ jobs:
         with:
           target: '<target>'
           rules_file_name: '.zap/rules.tsv'
-          issue_title: 'Security Report - ->{{ steps.set-now.outputs.NOW }}'
-          artifact_name: 'zap_scan_->{{ steps.set-now.outputs.NOW }}'
+          issue_title: 'Security Report - ->{%raw%}{{ steps.set-now.outputs.NOW }}{%endraw%}'
+          artifact_name: 'zap_scan_->{%raw%}{{ steps.set-now.outputs.NOW }}{%endraw%}'
 
-      - name: Add Security Label to Security Report - ->{{ steps.set-now.outputs.NOW }}
+      - name: Add Security Label to Security Report - ->{%raw%}{{ steps.set-now.outputs.NOW }}{%endraw%}
         # https://github.com/actions-ecosystem/action-add-labels
         uses: actions-ecosystem/action-add-labels@v1
-        if: ->{{ startsWith('Security Report - ->{{ steps.set-now.outputs.NOW }}', '/add-labels')}}
+        if: ->{%raw%}{{ startsWith('Security Report - ->{{ steps.set-now.outputs.NOW }}', '/add-labels')}}{%endraw%}
         with:
           labels: |
             security
