@@ -1,5 +1,9 @@
 # Table of Contents
 
+## Continuous Integration
+
+### [Python - Poetry CI Github Action](poetry_ci.md)
+
 ## Deployment
 
 ### [Github Actions for Releasing Python Packages to PYPI](pypi_releases.md)
