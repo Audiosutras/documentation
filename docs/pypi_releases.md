@@ -25,7 +25,7 @@ jobs:
       - name: Setup Python 3.11
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: ->{{ matrix.python-version }}
 
       - name: Install Pipx & Poetry
         run: |
@@ -36,7 +36,7 @@ jobs:
       - name: Configure Test.PYPI as source to publish to
         run: |
           poetry config repositories.testpypi https://test.pypi.org/legacy/
-          poetry config pypi-token.testpypi ${{ secrets.TEST_PYPI_PASSWORD }}
+          poetry config pypi-token.testpypi ->{{ secrets.TEST_PYPI_PASSWORD }}
 
       - name: Publish package
         run: poetry publish --build -r testpypi
@@ -67,7 +67,7 @@ jobs:
       - name: Setup Python 3.11
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: ->{{ matrix.python-version }}
 
       - name: Install Pipx & Poetry
         run: |
@@ -77,7 +77,7 @@ jobs:
 
       - name: Configure PYPI as source to publish to
         run: |
-          poetry config pypi-token.pypi ${{ secrets.PYPI_PASSWORD }}
+          poetry config pypi-token.pypi ->{{ secrets.PYPI_PASSWORD }}
 
       - name: Publish package
         run: poetry publish --build

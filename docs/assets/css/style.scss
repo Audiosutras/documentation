@@ -1,0 +1,44 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+    color: #21fc0d;
+    background-color: #000000;
+    background-image: none;
+}
+
+header {
+    border: none;
+}
+
+p,ul {
+    padding: 1rem 0rem;
+}
+
+li {
+    margin: 1rem 2rem;
+}
+
+h1,h2,h3,h4,h5 {
+    padding: 0.25rem 0rem
+}
+
+h1 {
+    padding: 1rem 0rem;
+}
+
+hr {
+    padding: 1rem;
+}
+
+#main_content {
+    a {
+        color: #bae6fd !important;
+        text-decoration: underline dotted #bae6fd !important;
+    }
+    .language-plaintext {
+        color: #c4b5fd !important;
+    }
+}

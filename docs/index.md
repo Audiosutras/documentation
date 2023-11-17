@@ -20,5 +20,3 @@
 
 ### [Getdat - A command line utility for getting resources available online](https://audiosutras.github.io/getdat/)
 
-- Back to [Chris Dixon On Code](https://chrisdixononcode.dev)
-

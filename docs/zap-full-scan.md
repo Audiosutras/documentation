@@ -24,7 +24,7 @@ jobs:
       - name: Set Date (NOW) as Variable
         id: set-now
         run: |
-          echo "NOW=$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+          echo "NOW=->(date +'%Y-%m-%d')" >> "->GITHUB_OUTPUT"
 
       - name: Checkout Repo for .zap/rules.tsv
         uses: actions/checkout@v4
@@ -37,13 +37,13 @@ jobs:
         with:
           target: '<target>'
           rules_file_name: '.zap/rules.tsv'
-          issue_title: 'Security Report - ${{ steps.set-now.outputs.NOW }}'
-          artifact_name: 'zap_scan_${{ steps.set-now.outputs.NOW }}'
+          issue_title: 'Security Report - ->{{ steps.set-now.outputs.NOW }}'
+          artifact_name: 'zap_scan_->{{ steps.set-now.outputs.NOW }}'
 
-      - name: Add Security Label to Security Report - ${{ steps.set-now.outputs.NOW }}
+      - name: Add Security Label to Security Report - ->{{ steps.set-now.outputs.NOW }}
         # https://github.com/actions-ecosystem/action-add-labels
         uses: actions-ecosystem/action-add-labels@v1
-        if: ${{ startsWith('Security Report - ${{ steps.set-now.outputs.NOW }}', '/add-labels')}}
+        if: ->{{ startsWith('Security Report - ->{{ steps.set-now.outputs.NOW }}', '/add-labels')}}
         with:
           labels: |
             security

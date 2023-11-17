@@ -39,17 +39,17 @@ The table below documents the port and internal IP address of custom dns resolve
 - Download the [latest release](https://github.com/Audiosutras/pihole-dockercompose/releases) (Currently `v1.0.1`)
 
     ```bash
-        $ wget https://github.com/Audiosutras/pihole-dockercompose/archive/refs/tags/v1.0.1.tar.gz
-        $ tar -xvf v1.0.1.tar.gz
-        $ rm v1.0.1.tar.gz && cd pihole-dockercompose-1.0.1
+-> wget https://github.com/Audiosutras/pihole-dockercompose/archive/refs/tags/v1.0.1.tar.gz
+-> tar -xvf v1.0.1.tar.gz
+-> rm v1.0.1.tar.gz && cd pihole-dockercompose-1.0.1
     ```
 ### CLI Prompted Install
 
 After [downloading the release](#download-the-latest-release) make sure your current working directory is `pihole-dockercompose-1.0.1`.
 
 ```bash
-    $ ls
-    $ docker-compose.yml READMe.md Makefile setup.sh
+-> ls
+-> docker-compose.yml READMe.md Makefile setup.sh
 ```
 
 Now run `make setup` from the cli. This command will walk you through installation and setup. This command currently only 
@@ -65,9 +65,9 @@ you plan to run Pihole on. Ensure your machine has at least 4GB of RAM.
 To check if `docker` and `docker-compose` is already installed run the following commands from the command line:
 
 ```bash
-$ docker --version
+-> docker --version
 Docker version 24.0.6, build ed223bc
-$ docker-compose --version
+-> docker-compose --version
 docker-compose version 1.28.0, build d02a7b1a
 ```
 
@@ -83,9 +83,9 @@ If nothing was returned when running the above commands follow docker's recommen
 1. Create an `.env` file in the same directory as the `docker-compose.yml` file
 
     ```bash
-    $ ls
+-> ls
     docker-compose.yml  READMe.md
-    $ touch .env && sudo nano .env # opens nano editor
+-> touch .env && sudo nano .env # opens nano editor
     ```
 
     Copy & Paste the code block below into the `nano editor`.
@@ -105,7 +105,7 @@ If nothing was returned when running the above commands follow docker's recommen
     If you are running this project on Ubuntu (and maybe Fedora) there are [additional steps](#ubuntu-additional-steps) that need to be completed before continuing with step 2.
 
     ```bash
-    $ docker-compose up -d
+-> docker-compose up -d
     ```
 
     Pihole and Unbound will restart automatically unless explicitly stopped by the user.
@@ -119,7 +119,7 @@ If nothing was returned when running the above commands follow docker's recommen
 
     ```bash
         # make sure to write down the first entry in this list
-        $ hostname -I
+-> hostname -I
     ```
 
 4. Confirm PiHole is using Unbound as the upstream DNS
@@ -149,9 +149,9 @@ Here are the steps for the unoffical solution
 
 ```bash
     # The Unoffical Solution for the Streets
-    $ sudo systemctl disable systemd-resolved
-    $ sudo systemctl stop systemd-resolved
-    $ sudo nano /etc/NetworkManager/NetworkManager.conf 
+-> sudo systemctl disable systemd-resolved
+-> sudo systemctl stop systemd-resolved
+-> sudo nano /etc/NetworkManager/NetworkManager.conf 
 ```
 
 Add `dns=default` under `[main]` section in `/etc/NetworkManager/NetworkManager.conf`
@@ -170,13 +170,13 @@ Press `CTRL + X` then `Y` and then `ENTER` to exit the editor.
 Delete the sysmlink `/etc/resolv.conf`
 
 ```bash
-$ rm /etc/resolv.conf
+-> rm /etc/resolv.conf
 ```
 
 Restart NetworkManager
 
 ``` bash
-$ sudo systemctl restart NetworkManager
+-> sudo systemctl restart NetworkManager
 ```
 
 Now we can proceed back to step 2 in [Running PiHole & Unbound](#running-pihole--unbound-linuxmac-os).

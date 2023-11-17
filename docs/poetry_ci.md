@@ -31,7 +31,7 @@ jobs:
       - name: Setup Python 3.11 # reflect correct python version. Update name if needed
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: ->{{ matrix.python-version }}
 
       - name: Install Pipx & Poetry
         run: |
