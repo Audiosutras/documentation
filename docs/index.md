@@ -16,6 +16,10 @@
 
 ### [Pi-hole & Unbound Setup Using Docker Compose](pihole.md)
 
+## Fixes
+
+### [[Solution] Linux Mint Black Screen After Login Using Nvidia Drivers](linux-mint-nvidia-black-screen.md)
+
 ## Projects
 
 ### [Getdat - A command line utility for getting resources available online](https://getdat.chrisdixononcode.dev)
