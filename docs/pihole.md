@@ -4,7 +4,6 @@
 - [Background](#background)
 - [DNS Resolver CheatSheet](#dns-resolver-cheatsheet)
 - [Download The Latest Release](#download-the-latest-release)
-    - [CLI Prompted Install](#cli-prompted-install)
 - [Prerequiste Installation](#prerequiste-installation)
     - [Docker & Docker Compose](#docker--docker-compose)
 - [Running PiHole & Unbound (Linux / Mac OS)](#running-pihole--unbound-linuxmac-os)
@@ -39,21 +38,10 @@ The table below documents the port and internal IP address of custom dns resolve
 - Download the [latest release](https://github.com/Audiosutras/pihole-dockercompose/releases) (Currently `v1.0.1`)
 
     ```bash
--> wget https://github.com/Audiosutras/pihole-dockercompose/archive/refs/tags/v1.0.1.tar.gz
--> tar -xvf v1.0.1.tar.gz
--> rm v1.0.1.tar.gz && cd pihole-dockercompose-1.0.1
+    -> wget https://github.com/Audiosutras/pihole-dockercompose/archive/refs/tags/v1.0.2.tar.gz
+    -> tar -xvf v1.0.2.tar.gz
+    -> rm v1.0.2.tar.gz && cd pihole-dockercompose-1.0.2
     ```
-### CLI Prompted Install
-
-After [downloading the release](#download-the-latest-release) make sure your current working directory is `pihole-dockercompose-1.0.1`.
-
-```bash
--> ls
--> docker-compose.yml READMe.md Makefile setup.sh
-```
-
-Now run `make setup` from the cli. This command will walk you through installation and setup. This command currently only 
-supports setup on Ubuntu/Debian operating systems. If on make Mac OS you can give this command a shot. Make sure select no when prompted about [Ubuntu Additional Steps](#ubuntu-additional-steps). Continue reading if not using the cli prompted install.
 
 ## Prerequiste Installation
 
@@ -83,19 +71,21 @@ If nothing was returned when running the above commands follow docker's recommen
 1. Create an `.env` file in the same directory as the `docker-compose.yml` file
 
     ```bash
--> ls
+    -> ls
     docker-compose.yml  READMe.md
--> touch .env && sudo nano .env # opens nano editor
+    -> touch .env && sudo nano .env # opens nano editor
     ```
 
     Copy & Paste the code block below into the `nano editor`.
     - Replace `<super secret password for logging into pihole dashboard>` with your password.
-    - Replace `<timezone>` with your timezone. For example `America/New_York` 
+    - Replace `<timezone>` with your timezone. For example `America/New_York`
+    - Replace `<dns addresses>` with the upstream dns you would like to use. If you would like to use `Unbound` write `'10.1.1.3#53'` or if you would like to use `Cloudflare` and `Quad 9` write `'1.1.1.1;9.9.9.9'` for example. There are more options available in the pihole admin than this. This just selects the default upstream providers that will be checked in the admin on system start. 
 
     ```env
     PIHOLE_PWD=<super secret password for logging into pihole dashboard>
     # Switch With your local TimeZone, ex: PIHOLE_TZ=America/New_York 
     PIHOLE_TZ=<timezone>
+    PIHOLE_DNS=<dns addresses>
     ```
 
     Press `CTRL + X` then `Y` and then `ENTER` to exit the editor.
@@ -105,7 +95,7 @@ If nothing was returned when running the above commands follow docker's recommen
     If you are running this project on Ubuntu (and maybe Fedora) there are [additional steps](#ubuntu-additional-steps) that need to be completed before continuing with step 2.
 
     ```bash
--> docker-compose up -d
+    -> docker-compose up -d
     ```
 
     Pihole and Unbound will restart automatically unless explicitly stopped by the user.
@@ -119,15 +109,16 @@ If nothing was returned when running the above commands follow docker's recommen
 
     ```bash
         # make sure to write down the first entry in this list
--> hostname -I
+    -> hostname -I
     ```
 
-4. Confirm PiHole is using Unbound as the upstream DNS
+4. Confirm PiHole is the selected upstream DNS servers selected in Step 1
 
-    - Navigate to `http://<ip-address>/admin` replacing `<ip-address>` with the address you obtained in step 3.
+    - Navigate to `http://<ip-address>/admin` replacing `<ip-address>` with the address you obtained in step 3. If `127.0.0.1` append the port as so: `http://127.0.0.1:8080/admin`
     - Input the `PIHOLE_PWD` password you chose in step 1 to access the admin
     - Navigate to `Settings`, click on the `DNS` tab. Under `Upstream DNS` `Custom 1 (IPv4)` you should see checked `10.1.1.3#53`. This is `Unbound`'s internal IP address. 
     - You can uncheck this and use any of the other upstream dns servers like `Cloudflare` and `Quad9` whenever you want to.
+    - *Note* Unbound being checked is contigent upon what upsteam dns providers you selected for `PIHOLE_DNS` in Step 1. If you chose `'1.1.1.1;9.9.9.9` you will see `Cloudflare` and `Quad 9` checked.
 
 5. Start using Pihole - [Article: Configure Clients to use Pihole](https://discourse.pi-hole.net/t/how-do-i-configure-my-devices-to-use-pi-hole-as-their-dns-server/245)
 
