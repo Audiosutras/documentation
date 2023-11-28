@@ -16,9 +16,13 @@
 
 ### [Pi-hole & Unbound Setup Using Docker Compose](pihole.md)
 
+## Hosting
+
+### [Hosting Documentation Using Github Pages && Jekyll](jekyll_github_pages.md)
+
 ## Fixes
 
-### [[Solution] Linux Mint Black Screen After Login Using Nvidia Drivers](linux-mint-nvidia-black-screen.md)
+### [[Solution] Linux Mint Black Screen After Login Using Nvidia Drivers](linux_mint_nvidia_black_screen.md)
 
 ## Projects
 
