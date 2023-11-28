@@ -1,4 +1,4 @@
-# Table of Contents
+# Topics
 
 ## Continuous Integration
 
@@ -18,7 +18,7 @@
 
 ## Hosting
 
-### [Hosting Documentation Using Github Pages && Jekyll](jekyll_github_pages.md)
+### [Hosting Documentation Using Github Pages & Jekyll](jekyll_github_pages.md)
 
 ## Fixes
 
