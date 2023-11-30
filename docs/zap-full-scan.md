@@ -40,14 +40,6 @@ jobs:
           issue_title: 'Security Report - ->{%raw%}{{ steps.set-now.outputs.NOW }}{%endraw%}'
           artifact_name: 'zap_scan_->{%raw%}{{ steps.set-now.outputs.NOW }}{%endraw%}'
 
-      - name: Add Security Label to Security Report - ->{%raw%}{{ steps.set-now.outputs.NOW }}{%endraw%}
-        # https://github.com/actions-ecosystem/action-add-labels
-        uses: actions-ecosystem/action-add-labels@v1
-        if: ->{%raw%}{{ startsWith('Security Report - ->{{ steps.set-now.outputs.NOW }}', '/add-labels')}}{%endraw%}
-        with:
-          labels: |
-            security
-            reports
 ```
 
 2. Below is an example `rules.tsv`. Path: `<root_dir>/.zap/rules.tsv`. If using VSCode make sure to disable using spaces for tabs when editing this file. Github automatically generates a table for `.tsv` and `.csv` files. You'll know VS Code inserted spaces instead of tabs if this file does not render as a table in the Github UI
