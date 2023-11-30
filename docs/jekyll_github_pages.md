@@ -40,7 +40,7 @@ Ensure that `Github Actions` is your `Source` under `Build and deployment`. Scro
 
 ![Screenshot of Configuring Jekyll as Github Action](assets/images/gh-jekyll-configure.png)
 
-Clicking `Configure` will open an editor in github for you to review the workflow for this github action. Open clicking `Commit Changes` the action will be created and added to`.github/workflows/<something with jekyll in the title>.yml`.
+Clicking `Configure` will open an editor in github for you to review the workflow for this github action. Click `Commit Changes`, the action will be created and added to`.github/workflows/<something with jekyll in the title>.yml`.
 
 Pull down these changes to your local branch. Replace the contents of this file with the following to support our setup and tell github actions to build our jekyll site from the contents of the `docs/` directory.
 

@@ -35,7 +35,7 @@ The table below documents the port and internal IP address of custom dns resolve
 
 ## Download The Latest Release
 
-- Download the [latest release](https://github.com/Audiosutras/pihole-dockercompose/releases) (Currently `v1.0.1`)
+- Download the [latest release](https://github.com/Audiosutras/pihole-dockercompose/releases) (Currently `v1.0.2`)
 
     ```bash
     -> wget https://github.com/Audiosutras/pihole-dockercompose/archive/refs/tags/v1.0.2.tar.gz
