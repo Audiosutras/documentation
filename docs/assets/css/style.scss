@@ -41,10 +41,6 @@ p,ul,ol {
 
 ol {
     list-style-type: decimal !important;
-    li {
-        counter-increment: step-counter;
-        content: counter(step-counter);
-    }
 }
 
 li {

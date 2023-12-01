@@ -1,6 +1,6 @@
 # Github Actions for Releasing Python Packages to PYPI
 
-1. Add `pre-release.yml` to `.github/workflows`. This workflow is triggered on tag creation and publishes to `tests.pypi`:
+Add `pre-release.yml` to `.github/workflows`. This workflow is triggered on tag creation and publishes to `tests.pypi`:
 
 ```yml
 name: Publish to Test.PyPI
@@ -41,7 +41,7 @@ jobs:
 
 - Github Secret Used: `TEST_PYPI_PASSWORD`- API token generated on test.pypi.org
 
-2. Add `release.yml` to `.github/workflows`. Triggered on Github Releases and publishes to `pypi`:
+Add `release.yml` to `.github/workflows`. Triggered on Github Releases and publishes to `pypi`:
 
 ```yml
 name: Publish to PyPI
@@ -79,23 +79,24 @@ jobs:
 
 - Github Secret Used: `PYPI_PASSWORD` - API token generated on pypi.org
 
-3. Update repo's readme with procedure for running a deployment
+Update repo's `ReadMe.md` with procedure for running a deployment:
+    
+    1. In `pyproject.toml` *bump* the version number `*.*.*`
 
----
-1. In `pyproject.toml` *bump* the version number `*.*.*`
+    2. Create a [git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) with the new version number `*.*.*` you specified in `pyproject.toml`.
 
-2. Create a [git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) with the new version number `*.*.*` you specified in `pyproject.toml`.
+    3. Push the newly created tag `git push origin *.*.*` to the repository. This will trigger the `pre-release.yml` github workflow to publish our package to `test.pypi`. The pre-release can be seen [here](https://test.pypi.org/project/getdat/) for testing. Install with:
 
-3. Push the newly created tag `git push origin *.*.*` to the repository. This will trigger the `pre-release.yml` github workflow to publish our package to `test.pypi`. The pre-release can be seen [here](https://test.pypi.org/project/getdat/) for testing. Install with:
-```bash
--> python3.11 -m pip install --index-url https://test.pypi.org/simple/ <pyproject package name> --extra-index-url https://pypi.org/simple <tool.poetry.dependencies except python>
-```
-- *Note*: `--extra-index-url` option is pulling dependencies from `pypi.org` and not `test.pypi.org` though our package is coming in from `test.pypi.org`. Make sure to add all dependencies from `[tool.poetry.dependencies]` in `pyproject.toml` (except python) before running this command.
+    ```bash
+    -> python3.11 -m pip install --index-url https://test.pypi.org/simple/ <pyproject package name> --extra-index-url https://pypi.org/simple <tool.poetry.dependencies except python>
+    ```
+    - *Note*: `--extra-index-url` option is pulling dependencies from `pypi.org` and not `test.pypi.org` though our package is coming in from `test.pypi.org`. Make sure to add all dependencies from `[tool.poetry.dependencies]` in `pyproject.toml` (except python) before running this command.
 
-4. *Create* a [release](https://www.toolsqa.com/git/github-releases/) on github. Make sure to select `Tags` from the toggle menu. Select the latest tag (highest version number). Name the release `v*.*.*`. Make sure the version number in `pyproject.toml` syncs up with the release version. *Click* `Publish release`. This will kick off our `release.yml` workflow to publish our package to `pypi`. The release can be seen [here and installed](https://pypi.org/project/getdat/) for production use. Install with:
-```bash
--> pipx install <pyproject package name>
-```
+    4. *Create* a [release](https://www.toolsqa.com/git/github-releases/) on github. Make sure to select `Tags` from the toggle menu. Select the latest tag (highest version number). Name the release `v*.*.*`. Make sure the version number in `pyproject.toml` syncs up with the release version. *Click* `Publish release`. This will kick off our `release.yml` workflow to publish our package to `pypi`. The release can be seen [here and installed](https://pypi.org/project/getdat/) for production use. Install with:
+
+    ```bash
+    -> pipx install <pyproject package name>
+    ```
 
 
 
