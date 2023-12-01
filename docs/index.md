@@ -28,17 +28,9 @@
 
 ### [Getdat - A command line utility for getting resources available online](https://getdat.chrisdixononcode.dev)
 
----
+## Miscellanous
 
-# Sections
-
-## Github Actions
-
-### [Python - Poetry CI Github Action](poetry_ci.md)
-
-### [Github Actions for Releasing Python Packages to PYPI](pypi_releases.md)
-
-### [Perform Weekly Security Audits with ZAProxy & Github Actions](zap-full-scan.md)
+### [Amazing Lists](amazing_lists.md)
 
 
 
