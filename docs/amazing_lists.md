@@ -88,12 +88,24 @@ Rapidly build modern websites without ever leaving your HTML.
 [Sass Lang](https://sass-lang.com/)
 Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 
+[Styled Components](https://styled-components.com/)
+CSS for the `<Component>` Age
+
+[HTMX](https://htmx.org/docs/)
+htmx is a library that allows you to access modern browser features directly from HTML, rather than using javascript.
+
+[Alpine JS](https://alpinejs.dev/)
+Your new, lightweight, JavaScript framework.
+
 ### React
 [React Hooks](https://react.dev/reference/react/hooks)
 Introduced in version 16+, React Hooks are designed to be a functional approach to build react applications.
 
 [React Charts](https://react-charts.tanstack.com/docs/overview)
 Beautiful, flexible, highly-performant charts for React
+
+[Redux](https://redux.js.org/)
+A Predictable State Container for JS Apps
 
 [Next.js App Router](https://nextjs.org/docs)
 The React Framework for the Web. Links to docs for Next.js projects using app router rather than page router
@@ -108,6 +120,12 @@ A GitHub Action for running the ZAP Full Scan to perform Dynamic Application Sec
 The ZAP full scan action runs the ZAP spider against the specified target (by default with no time limit) followed by an optional ajax spider scan and then a full active scan before reporting the results. The alerts will be maintained as a GitHub issue in the corresponding repository.
 
 WARNING this action will perform attacks on the target website. You should only scan targets that you have permission to test. You should also check with your hosting company and any other services such as CDNs that may be affected before running this action. ZAP will also submit forms which could result in a large number of messages via, for example, 'Contact us' or 'comment' forms.
+
+### Vue
+[Vue API Reference](https://vuejs.org/api/)
+
+[Pinia](https://pinia.vuejs.org/)
+The intuitive store for Vue.js
 
 
 
