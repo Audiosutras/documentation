@@ -30,7 +30,7 @@
 
 ## Miscellanous
 
-### [Amazing Lists](amazing_lists.md)
+### [Amazing Lists for Machine Users](amazing_lists.md)
 
 
 
