@@ -1,8 +1,9 @@
 # Amazing Lists
+A collection of managed lists on github and some of my own.
 
 ---
 
-## Managed Lists
+## Github Managed Lists
 [Awesome](https://github.com/sindresorhus/awesome)
 😎 Awesome lists about all kinds of interesting topics
 
@@ -16,6 +17,7 @@ A curated list of awesome actions to use on GitHub
 A collection of various awesome lists for hackers, pentesters and security researcher
 
 [Awesome (Gem-Packaged) Jekyll Plugins](https://github.com/planetjekyll/awesome-jekyll-plugins)
+A collection of awesome Jekyll plugins adding converters, generators, filters & tags, importers, new commands & switches, and more.
 
 [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
 This is a list of topic-centric public data sources in high quality. They are collected and tidied from blogs, answers, and user responses. Most of the data sets listed below are free, however, some are not. This project was incubated at OMNILab, Shanghai Jiao Tong University during Xiaming Chen's Ph.D. studies. OMNILab is now part of the BaiYuLan Open AI community.
@@ -39,16 +41,13 @@ A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners,
 
 ## Self-managed List
 
-### Security
-[ZaProxy](https://github.com/zaproxy/zaproxy)
-The Zed Attack Proxy (ZAP) is one of the world’s most popular free security tools and is actively maintained by a dedicated international team of volunteers. It can help you automatically find security vulnerabilities in your web applications while you are developing and testing your applications. It's also a great tool for experienced pentesters to use for manual security testing.
+### Blockchain
+[Solidity](https://soliditylang.org/)
+A statically-typed curly-braces programming language designed for developing smart contracts that run on Ethereum.
 
-[ZAP Action Full Scan](https://github.com/zaproxy/action-full-scan)
-A GitHub Action for running the ZAP Full Scan to perform Dynamic Application Security Testing (DAST).
+### Cheatsheets
+[Nano Editor](https://www.nano-editor.org/dist/latest/cheatsheet.html)
 
-The ZAP full scan action runs the ZAP spider against the specified target (by default with no time limit) followed by an optional ajax spider scan and then a full active scan before reporting the results. The alerts will be maintained as a GitHub issue in the corresponding repository.
-
-WARNING this action will perform attacks on the target website. You should only scan targets that you have permission to test. You should also check with your hosting company and any other services such as CDNs that may be affected before running this action. ZAP will also submit forms which could result in a large number of messages via, for example, 'Contact us' or 'comment' forms.
 
 ### E-book Readers
 [Librum-Reader](https://github.com/Librum-Reader)
@@ -59,9 +58,10 @@ A simple ebook reader for Elementary OS
 
 ### Python
 [Pallets Projects](https://github.com/pallets)
-    - Click: Python composable command line interface toolkit
-    - Flask: The Python micro framework for building web applications.
-    - Jinja: A very fast and expressive template engine.
+    
+- [Click](https://github.com/pallets/click): Python composable command line interface toolkit
+- [Flask](https://github.com/pallets/flask): The Python micro framework for building web applications.
+- [Jinja](https://github.com/pallets/jinja): A very fast and expressive template engine.
 
 [Django](https://github.com/django/django)
 The Web framework for perfectionists with deadlines.
@@ -71,6 +71,43 @@ Web APIs for Django. 🎸
 
 [Wagtail](https://github.com/wagtail)
 The powerful Python CMS for modern websites
+
+[Celery](https://github.com/celery/celery)
+Celery is a simple, flexible, and reliable distributed system to process vast amounts of messages, while providing operations with the tools required to maintain such a system.
+
+### Frontend (General)
+[Tanstack Query](https://tanstack.com/query/latest)
+Powerful asynchronous state management for TS/JS, React, Solid, Vue and Svelte
+
+[DataTables](https://datatables.net/)
+Add advanced interaction controls to your HTML tables the free & easy way
+
+[TailwindCSS](https://tailwindcss.com/)
+Rapidly build modern websites without ever leaving your HTML.
+
+[Sass Lang](https://sass-lang.com/)
+Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+
+### React
+[React Hooks](https://react.dev/reference/react/hooks)
+Introduced in version 16+, React Hooks are designed to be a functional approach to build react applications.
+
+[React Charts](https://react-charts.tanstack.com/docs/overview)
+Beautiful, flexible, highly-performant charts for React
+
+[Next.js App Router](https://nextjs.org/docs)
+The React Framework for the Web. Links to docs for Next.js projects using app router rather than page router
+
+### Security
+[ZaProxy](https://github.com/zaproxy/zaproxy)
+The Zed Attack Proxy (ZAP) is one of the world’s most popular free security tools and is actively maintained by a dedicated international team of volunteers. It can help you automatically find security vulnerabilities in your web applications while you are developing and testing your applications. It's also a great tool for experienced pentesters to use for manual security testing.
+
+[ZAP Action Full Scan](https://github.com/zaproxy/action-full-scan)
+A GitHub Action for running the ZAP Full Scan to perform Dynamic Application Security Testing (DAST).
+
+The ZAP full scan action runs the ZAP spider against the specified target (by default with no time limit) followed by an optional ajax spider scan and then a full active scan before reporting the results. The alerts will be maintained as a GitHub issue in the corresponding repository.
+
+WARNING this action will perform attacks on the target website. You should only scan targets that you have permission to test. You should also check with your hosting company and any other services such as CDNs that may be affected before running this action. ZAP will also submit forms which could result in a large number of messages via, for example, 'Contact us' or 'comment' forms.
 
 
 
