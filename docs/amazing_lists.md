@@ -136,8 +136,4 @@ WARNING this action will perform attacks on the target website. You should only 
 [Pinia](https://pinia.vuejs.org/)
 The intuitive store for Vue.js
 
-
-
-
-
-
+[Nuxt.js](https://github.com/nuxt/nuxt)
