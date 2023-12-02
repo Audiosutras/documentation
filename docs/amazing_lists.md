@@ -75,6 +75,12 @@ The powerful Python CMS for modern websites
 [Celery](https://github.com/celery/celery)
 Celery is a simple, flexible, and reliable distributed system to process vast amounts of messages, while providing operations with the tools required to maintain such a system.
 
+[Poetry](https://python-poetry.org/)
+Python packaging and dependency management made easy
+
+[PIPX](https://pypa.github.io/pipx/)
+Install and Run Python Applications in Isolated Environments
+
 ### Frontend (General)
 [Tanstack Query](https://tanstack.com/query/latest)
 Powerful asynchronous state management for TS/JS, React, Solid, Vue and Svelte
@@ -96,6 +102,9 @@ htmx is a library that allows you to access modern browser features directly fro
 
 [Alpine JS](https://alpinejs.dev/)
 Your new, lightweight, JavaScript framework.
+
+[PNpM](https://pnpm.io/)
+Fast, disk space efficient package manager
 
 ### React
 [React Hooks](https://react.dev/reference/react/hooks)
