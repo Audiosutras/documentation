@@ -75,6 +75,9 @@ The powerful Python CMS for modern websites
 [Celery](https://github.com/celery/celery)
 Celery is a simple, flexible, and reliable distributed system to process vast amounts of messages, while providing operations with the tools required to maintain such a system.
 
+[Requests](https://requests.readthedocs.io/en/latest/)
+Requests is an elegant and simple HTTP library for Python, built for human beings.
+
 [Poetry](https://python-poetry.org/)
 Python packaging and dependency management made easy
 
