@@ -31,8 +31,4 @@
 ## Miscellanous
 
 ### [Amazing Lists for Machine Users](amazing_lists.md)
-
-
-
-
-
+### [Extracting Rar Files](rar_files.md)

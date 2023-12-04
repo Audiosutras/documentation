@@ -19,6 +19,9 @@ A collection of various awesome lists for hackers, pentesters and security resea
 [Awesome (Gem-Packaged) Jekyll Plugins](https://github.com/planetjekyll/awesome-jekyll-plugins)
 A collection of awesome Jekyll plugins adding converters, generators, filters & tags, importers, new commands & switches, and more.
 
+[Awesome Neovim](https://github.com/rockerBOO/awesome-neovim)
+Neovim is a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions.
+
 [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
 This is a list of topic-centric public data sources in high quality. They are collected and tidied from blogs, answers, and user responses. Most of the data sets listed below are free, however, some are not. This project was incubated at OMNILab, Shanghai Jiao Tong University during Xiaming Chen's Ph.D. studies. OMNILab is now part of the BaiYuLan Open AI community.
 
