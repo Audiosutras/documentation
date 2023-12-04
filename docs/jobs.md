@@ -1,4 +1,4 @@
-# My Job Board
+# My Briantrust Job Board
 
 ## Child Mind Institute
 
@@ -19,5 +19,12 @@ Since 2016, our vision has been clear: bring crypto to the masses. With the most
 
 ### Openings
 - [Sr. Full Stack Engineer (Can not be in California) - Remote](https://app.usebraintrust.com/r/chris1275/?job_id=8363) (130k - 140k yr) (Python, Django, Node.js, Postgres, TypeScript, MS SQL, Docker)
-- [Lead Software Engineer](https://app.usebraintrust.com/r/chris1275/?job_id=9822) ""
+- [Lead Software Engineer](https://app.usebraintrust.com/r/chris1275/?job_id=9822) (ibid.)
+
+## X Build
+X Build is radically transforming the way roofing contractors operate their business. We get projects approved 70% faster using our mobile inspection app and an automated reporting engine, and provide instant payments to roofing contractors as soon as construction is complete. This results in our customers being able to dramatically scale their business in a way that’s never been seen in the industry before.
+
+### Openings
+- [Software Engineer - Remote](https://app.usebraintrust.com/r/chris1275/?job_id=11306) (50 - 70 hr) (React, Node.js, Javascript)
+
 

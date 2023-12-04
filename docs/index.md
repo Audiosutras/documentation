@@ -32,5 +32,4 @@
 
 ### [Amazing Lists for Machine Users](amazing_lists.md)
 ### [Extracting Rar Files](rar_files.md)
-
-### [My Job Board](jobs.md)
+### [My Braintrust Job Board](jobs.md)
