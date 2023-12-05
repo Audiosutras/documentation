@@ -1,5 +1,11 @@
 # My Briantrust Job Board
 
+## Open Assembly
+Open Assembly co-creates the future of work with organizations, platforms, and people by providing content, community, and strategic advising services. We glean key insights from Harvard Business School faculty and researchers and the Laboratory for Innovation Sciences at Harvard (LISH), to inform and inspire new ways of working using open strategies.
+
+### Openings
+- [UI Engineer](https://app.usebraintrust.com/r/chris1275/?job_id=11371) (60 - 70 hr) (React.js, Graphql, Redux, Right to Left Languages, Mongo DB, CI/CD pipelines)
+
 ## Pinterest
 Pinterest's mission is to bring everyone the inspiration to create a life they love. It’s the biggest dataset of ideas ever assembled, with over 200 billion recipes, home hacks, style inspiration and other ideas to try. More than 430 million people around the world use Pinterest to dream about, plan and prepare for things they want to do in life.
 
