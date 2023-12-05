@@ -1,5 +1,12 @@
 # My Briantrust Job Board
 
+## Pinterest
+Pinterest's mission is to bring everyone the inspiration to create a life they love. It’s the biggest dataset of ideas ever assembled, with over 200 billion recipes, home hacks, style inspiration and other ideas to try. More than 430 million people around the world use Pinterest to dream about, plan and prepare for things they want to do in life.
+
+### Openings
+- [Security Engineer (Remote) - 5708](https://app.usebraintrust.com/r/chris1275/?job_id=11418) (Python, GSuite, Okta, Vulnerability Management Platforms)
+- [Security Engineer (Remote) - 3659](https://app.usebraintrust.com/r/chris1275/?job_id=11406) (Security Engineer, Certifications)
+
 ## Child Mind Institute
 
 The Child Mind Institute is an independent national nonprofit dedicated to transforming the lives of children and families struggling with mental health and learning disorders. Our teams work every day to deliver the highest standards of care, advance the science of the developing brain and empower parents, professionals, and policymakers to support children when and where they need it most. Together with our supporters, we’re helping children reach their full potential in school and in life. We share all of our resources freely and do not accept any funding from the pharmaceutical industry.
