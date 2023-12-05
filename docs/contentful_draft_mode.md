@@ -54,4 +54,4 @@ CONTENTFUL_ACCESS_TOKEN = :access_token
 </div>
 
 ### Usage
-Import `contentfulClient` where you would like to the contentful client inline with the javascript api. [For example](https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/entries/entry/get-a-single-entry/console/js)
+Import `contentfulClient` where you would like to use the contentful client inline with the javascript api. [For example](https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/entries/entry/get-a-single-entry/console/js)
