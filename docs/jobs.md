@@ -27,4 +27,11 @@ X Build is radically transforming the way roofing contractors operate their busi
 ### Openings
 - [Software Engineer - Remote](https://app.usebraintrust.com/r/chris1275/?job_id=11306) (50 - 70 hr) (React, Node.js, Javascript)
 
+## Positional
+Positional is building software for modern content marketing teams.  We're looking for a Frontend Engineer with 5+ years of experience in React and Redux. You will be working alongside the rest of our frontend engineering team to help build new features, improve existing features and ultimately deliver tools to help improve the workflows and efficiency of the many content marketing teams that use our software daily.
+
+### Openings
+- [Senior Frontend Engineer](https://app.usebraintrust.com/r/chris1275/?job_id=11453) (60 - 125 hr) (React.js, Redux.js, Typescript, REST APIs, Docker)
+
+
 
