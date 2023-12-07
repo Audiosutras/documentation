@@ -87,6 +87,9 @@ Python packaging and dependency management made easy
 [PIPX](https://pypa.github.io/pipx/)
 Install and Run Python Applications in Isolated Environments
 
+[IP Info](https://ipinfo.io/)
+Accurate IP address data that keeps pace with secure, specific, and forward-looking use cases.
+
 ### Frontend (General)
 [Tanstack Query](https://tanstack.com/query/latest)
 Powerful asynchronous state management for TS/JS, React, Solid, Vue and Svelte
