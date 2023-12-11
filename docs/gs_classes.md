@@ -1,6 +1,10 @@
 # Useful Classes for Google AppScript
 Below are classes that are useful for interacting with [Google Workspace API](https://developers.google.com/workspace) using Google's [appscript](https://developers.google.com/apps-script) language
 
+## Table of Contents
+
+- [Emails](#emails)
+
 ## Emails
 
 ```javascript
@@ -78,6 +82,7 @@ const email = new ChildEmailClass(
     emailAddresses,
     [file], // as many as need to be specified. See File objects in API
 )
+email.sendEmail()
 ```
 
 ### References
