@@ -16,6 +16,9 @@
 
 ### [[Solution] Linux Mint Black Screen After Login Using Nvidia Drivers](linux_mint_nvidia_black_screen.md)
 
+## Google Workspace API
+
+### [Useful Classes for Google AppScript](gs_classes.md)
 
 ## Hosting
 
