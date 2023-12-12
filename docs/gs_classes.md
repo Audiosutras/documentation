@@ -1,5 +1,5 @@
 # Useful Classes for Google AppScript
-Below are classes that are useful for interacting with [Google Workspace API](https://developers.google.com/workspace) using Google's [appscript](https://developers.google.com/apps-script) language
+Below are classes that are useful for interacting with [Google Workspace API](https://developers.google.com/workspace) using Google's [Appscript](https://developers.google.com/apps-script) language that's based on javascript
 
 ## Table of Contents
 
@@ -89,3 +89,4 @@ email.sendEmail()
 
 - [MailApp](https://developers.google.com/apps-script/reference/mail/mail-app)
 - [File](https://developers.google.com/apps-script/reference/drive/file)
+

@@ -59,6 +59,10 @@ A modern and opensource ebook reading solution
 [Bookworm](https://github.com/babluboy/bookworm)
 A simple ebook reader for Elementary OS
 
+### Google Workspace APIs
+[Clasp](https://github.com/google/clasp)
+[Command Line Apps Script Projects](https://developers.google.com/apps-script/guides/clasp)
+
 ### Python
 [Pallets Projects](https://github.com/pallets)
     
