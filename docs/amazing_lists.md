@@ -144,7 +144,7 @@ The ZAP full scan action runs the ZAP spider against the specified target (by de
 WARNING this action will perform attacks on the target website. You should only scan targets that you have permission to test. You should also check with your hosting company and any other services such as CDNs that may be affected before running this action. ZAP will also submit forms which could result in a large number of messages via, for example, 'Contact us' or 'comment' forms.
 
 ### Self-Hosting
-- [Movie Web](https://github.com/movie-web) - Movie-web is a web app for watching movies easily. This service works by displaying video files from third-party providers inside an intuitive and aesthic user interface. ([Demo](https://movie-web.app)) ([Self Hosting Docs](https://docs.movie-web.app/self-hosting/hosting-intro)) `MIT` `Docker/Typescript`
+[Movie Web](https://github.com/movie-web) - Movie-web is a web app for watching movies easily. This service works by displaying video files from third-party providers inside an intuitive and aesthic user interface. ([Demo](https://movie-web.app)) ([Self Hosting Docs](https://docs.movie-web.app/self-hosting/hosting-intro)) `MIT` `Docker/Typescript`
 
 ### Vue
 [Vue API Reference](https://vuejs.org/api/)
