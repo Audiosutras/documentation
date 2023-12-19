@@ -66,6 +66,9 @@ A simple ebook reader for Elementary OS
 [Clasp](https://github.com/google/clasp)
 [Command Line Apps Script Projects](https://developers.google.com/apps-script/guides/clasp)
 
+### Linux Distributions 
+[Linux Mint](https://www.linuxmint.com)
+
 ### Python
 [Pallets Projects](https://github.com/pallets)
     
