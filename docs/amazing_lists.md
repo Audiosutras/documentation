@@ -149,6 +149,8 @@ WARNING this action will perform attacks on the target website. You should only 
 ### Self-Hosting
 [Movie Web](https://github.com/movie-web) - Movie-web is a web app for watching movies easily. This service works by displaying video files from third-party providers inside an intuitive and aesthic user interface. ([Demo](https://movie-web.app)) ([Self Hosting Docs](https://docs.movie-web.app/self-hosting/hosting-intro)) `MIT` `Docker/Typescript`
 
+[Anna's Archive](https://annas-software.org/AnnaArchivist/annas-archive) - A web app that hosts a search engine for books, science papers, comics, magazines, and more. ([Demo](https://annas-archive.org/)) `Creative Commons Zero v1.0 Universal` `Docker/Python`
+
 ### Vue
 [Vue API Reference](https://vuejs.org/api/)
 
