@@ -1,3 +1,6 @@
+---
+category: Hosting
+---
 # Pi-hole & Unbound Setup Using Docker Compose
 
 ## Article Sections

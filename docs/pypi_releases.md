@@ -1,3 +1,6 @@
+---
+category: Continuous Deployment
+---
 # Github Actions for Releasing Python Packages to PYPI
 
 Add `pre-release.yml` to `.github/workflows`. This workflow is triggered on tag creation and publishes to `tests.pypi`:

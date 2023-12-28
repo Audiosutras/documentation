@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<h1 align="center">Documentation</h1>
+<div>
+{% assign categories_list = site.pages | group_by: "category" | sort: "name" %}
+    {% for category in categories_list %}
+        {% if category.name != "" %}
+            <h2>{{ category.name }}</h2>
+            <ul>
+            {% assign pages_list = category.items %}
+                {% for page in category.items %}
+                <a href="{{ page.url }}" class="py-4"><li>{{ page.title }}</li></a>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endfor %}
+</div>

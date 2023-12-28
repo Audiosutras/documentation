@@ -1,3 +1,6 @@
+---
+category: Google Workspace API
+---
 # Useful Classes for Google AppScript
 Below are classes that are useful for interacting with [Google Workspace API](https://developers.google.com/workspace) using Google's [Appscript](https://developers.google.com/apps-script) language that's based on javascript
 

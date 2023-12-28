@@ -1,3 +1,6 @@
+---
+category: Typescript
+---
 # Enabling Draft Previews for Contentful Development & Staging Environments
 
 This article is a tutorial for enabling [Contentful Delivery API](https://www.contentful.com/developers/docs/references/content-delivery-api/) draft previews so that developers, quality assurance, and stakeholders can review and edit content drafts and extend features without changes interrupting content published on the production site.

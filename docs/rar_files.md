@@ -1,3 +1,6 @@
+---
+category: File Extensions
+---
 # Extracting Rar files
 [original article](https://www.wikihow.com/Unrar-Files-in-Linux)
 

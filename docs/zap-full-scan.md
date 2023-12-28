@@ -1,3 +1,6 @@
+---
+category: Security
+---
 # Perform Weekly Security Audits with ZAProxy & Github Actions
 
 Below is `security.yml`. Path: `.github/workflows/security.yml`. Make sure to replace `<target>` with the url for the website you are security testing:

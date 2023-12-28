@@ -1,3 +1,6 @@
+---
+category: Hosting
+---
 # Hosting Documentation Using Github Pages & Jekyll
 The github repo for [docs.chrisdixononcode.dev](https://github.com/Audiosutras/documentation) and [getdat](https://github.com/Audiosutras/getdat) are good examples to follow alongside this documentation if needed. `getdat` demonstrates hosting documentation for a python package.
 

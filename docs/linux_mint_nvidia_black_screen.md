@@ -1,3 +1,6 @@
+---
+category: Fixes
+---
 # [Solution] Linux Mint Black Screen After Login Using Nvidia Drivers
 Answer original provided by [generix](https://forums.developer.nvidia.com/t/linux-mint-nvidia-driver-loads-with-startx-but-not-on-initial-startup/168262)
 
