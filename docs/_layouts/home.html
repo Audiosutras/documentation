@@ -7,9 +7,9 @@ layout: default
     {% for category in categories_list %}
         {% if category.name != "" %}
             <div x-data="{ open: false }">
-                <div class="flex flex-row justify-between items-center">
+                <div class="flex flex-row justify-between items-center" @click="open = !open">
                     <h2>{{ category.name }}</h2>
-                    <button class="btn-primary" @click="open = !open">
+                    <button class="btn-primary">
                         <i class="fa-solid fa-arrow-down" x-show="!open"></i>
                         <i class="fa-solid fa-arrow-up" x-show="open"></i>
                     </button>
