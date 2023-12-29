@@ -6,12 +6,12 @@ layout: default
 {% assign categories_list = site.pages | group_by: "category" | sort: "name" %}
     {% for category in categories_list %}
         {% if category.name != "" %}
-            <div x-data="{ open: false }">
+            <div x-data="{ open: false }" class="py-4 border-b-2 border-purple-100">
                 <div class="flex flex-row justify-between items-center" @click="open = !open">
                     <h2>{{ category.name }}</h2>
                     <button class="btn-primary">
-                        <i class="fa-solid fa-arrow-down" x-show="!open"></i>
-                        <i class="fa-solid fa-arrow-up" x-show="open"></i>
+                        <i class="fa-solid fa-arrow-down text-xl" x-show="!open"></i>
+                        <i class="fa-solid fa-arrow-up text-xl" x-show="open"></i>
                     </button>
                 </div>
                 <div x-show="open" x-transition class="border-2 border-emerald-100 text-center rounded py-8 shadow-lg shadow-emerald-100/50">
