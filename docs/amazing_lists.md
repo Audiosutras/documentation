@@ -69,6 +69,9 @@ A simple ebook reader for Elementary OS
 [Clasp](https://github.com/google/clasp) -
 [Command Line Apps Script Projects](https://developers.google.com/apps-script/guides/clasp)
 
+### Linux Development
+[Flatpak](https://docs.flatpak.org/en/latest/index.html) Learn to build and distribute Linux native desktop applications using Flatpak.
+
 ### Linux Distributions 
 [Linux Mint](https://www.linuxmint.com)
 
@@ -104,6 +107,8 @@ Install and Run Python Applications in Isolated Environments
 Accurate IP address data that keeps pace with secure, specific, and forward-looking use cases.
 
 ### Frontend (General)
+[Electron](https://www.electronjs.org/) Build cross-platform desktop apps with Javascript, HTML, and CSS. See `Flatpak` for distributing the application on Linux.
+
 [Tanstack Query](https://tanstack.com/query/latest)
 Powerful asynchronous state management for TS/JS, React, Solid, Vue and Svelte
 
