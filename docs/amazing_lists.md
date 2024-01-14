@@ -109,6 +109,8 @@ Python packaging and dependency management made easy
 [PIPX](https://pypa.github.io/pipx/)
 Install and Run Python Applications in Isolated Environments
 
+[Python Social Auth](https://github.com/python-social-auth) Python Social Authentication Made Simple
+
 [IP Info](https://ipinfo.io/)
 Accurate IP address data that keeps pace with secure, specific, and forward-looking use cases.
 
