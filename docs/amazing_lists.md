@@ -109,6 +109,8 @@ Python packaging and dependency management made easy
 [PIPX](https://pypa.github.io/pipx/)
 Install and Run Python Applications in Isolated Environments
 
+[Python Dotenv](https://github.com/theskumar/python-dotenv) Python-dotenv reads key-value pairs from a `.env` file and can set them as environment variables. It helps in the development of applications
+
 [Python Social Auth](https://github.com/python-social-auth) Python Social Authentication Made Simple
 
 [IP Info](https://ipinfo.io/)
