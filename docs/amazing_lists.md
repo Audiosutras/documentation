@@ -16,6 +16,8 @@ A curated list of awesome actions to use on GitHub
 [Awesome CLI Apps](https://github.com/agarrharr/awesome-cli-apps)
 🖥 📊 🕹 🛠 A curated list of command line apps
 
+[Awesome Compose](https://github.com/docker/awesome-compose/tree/master) These samples provide a starting point for how to integrate different services using a Compose file and to manage their deployment with Docker Compose.
+
 [Awesome Hacking](https://github.com/Hack-with-Github/Awesome-Hacking)
 A collection of various awesome lists for hackers, pentesters and security researcher
 
@@ -93,6 +95,8 @@ The Web framework for perfectionists with deadlines.
 
 [Django Rest Framework](https://github.com/encode/django-rest-framework)
 Web APIs for Django. 🎸
+
+[Quickstart: Compose and Django](https://github.com/docker/awesome-compose/tree/master/official-documentation-samples/django/) This quick-start guide demonstrates how to use Docker Compose to set up and run a simple Django/PostgreSQL app.
 
 [Wagtail](https://github.com/wagtail)
 The powerful Python CMS for modern websites
