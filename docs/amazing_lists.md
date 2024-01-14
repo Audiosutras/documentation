@@ -75,7 +75,13 @@ A simple ebook reader for Elementary OS
 ### Linux Distributions 
 [Linux Mint](https://www.linuxmint.com)
 
-### Python
+### [PHP](https://formulae.brew.sh/formula/php#default)
+[Laravel](https://laravel.com/) The PhP Framework for Web Artisans
+
+[Composer](https://getcomposer.org/) A Dependency Manager for PHP
+
+
+### [Python](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa)
 [Pallets Projects](https://github.com/pallets)
     
 - [Click](https://github.com/pallets/click): Python composable command line interface toolkit
