@@ -113,6 +113,8 @@ Python packaging and dependency management made easy
 [PIPX](https://pypa.github.io/pipx/)
 Install and Run Python Applications in Isolated Environments
 
+[Psycopg 3](https://www.psycopg.org/psycopg3/docs/basic/index.html) Psycopg 3 is a modern implementation of a PostgreSQL adapter for Python.
+
 [Python Dotenv](https://github.com/theskumar/python-dotenv) Python-dotenv reads key-value pairs from a `.env` file and can set them as environment variables. It helps in the development of applications
 
 [Python Social Auth](https://github.com/python-social-auth) Python Social Authentication Made Simple
