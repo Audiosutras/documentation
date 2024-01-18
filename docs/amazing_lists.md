@@ -67,9 +67,11 @@ A modern and opensource ebook reading solution
 [Bookworm](https://github.com/babluboy/bookworm)
 A simple ebook reader for Elementary OS
 
-### Google Workspace APIs
+### Google
 [Clasp](https://github.com/google/clasp) -
 [Command Line Apps Script Projects](https://developers.google.com/apps-script/guides/clasp)
+
+[Setting up your OAuth consent screen](https://support.google.com/cloud/answer/10311615#user-type&zippy=%2Cin-production) You must configure an OAuth consent screen before using an OAuth 2.0 client ID. This article describes OAuth consent screen settings and their impact on how your Google Cloud Platform project requests OAuth scopes from a Google Account.
 
 ### Linux Development
 [Flatpak](https://docs.flatpak.org/en/latest/index.html) Learn to build and distribute Linux native desktop applications using Flatpak.
