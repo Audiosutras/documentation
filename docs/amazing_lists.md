@@ -71,6 +71,33 @@ A modern and opensource ebook reading solution
 [Bookworm](https://github.com/babluboy/bookworm)
 A simple ebook reader for Elementary OS
 
+### Frontend (General)
+[Electron](https://www.electronjs.org/) Build cross-platform desktop apps with Javascript, HTML, and CSS. See `Flatpak` for distributing the application on Linux.
+
+[Tanstack Query](https://tanstack.com/query/latest)
+Powerful asynchronous state management for TS/JS, React, Solid, Vue and Svelte
+
+[DataTables](https://datatables.net/)
+Add advanced interaction controls to your HTML tables the free & easy way
+
+[TailwindCSS](https://tailwindcss.com/)
+Rapidly build modern websites without ever leaving your HTML.
+
+[Sass Lang](https://sass-lang.com/)
+Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+
+[Styled Components](https://styled-components.com/)
+CSS for the `<Component>` Age
+
+[HTMX](https://htmx.org/docs/)
+htmx is a library that allows you to access modern browser features directly from HTML, rather than using javascript.
+
+[Alpine JS](https://alpinejs.dev/)
+Your new, lightweight, JavaScript framework.
+
+[PNpM](https://pnpm.io/)
+Fast, disk space efficient package manager
+
 ### Google
 [Clasp](https://github.com/google/clasp) -
 [Command Line Apps Script Projects](https://developers.google.com/apps-script/guides/clasp)
@@ -82,6 +109,11 @@ A simple ebook reader for Elementary OS
 
 ### Linux Distributions 
 [Linux Mint](https://www.linuxmint.com)
+
+### Matrix
+[Website Here](https://matrix.org/) An open network for secure, decentralized communcation
+
+[Github Organization](https://github.com/matrix-org)
 
 ### PHP
 [Download Here]((https://formulae.brew.sh/formula/php#default))
@@ -131,33 +163,6 @@ Install and Run Python Applications in Isolated Environments
 
 [IP Info](https://ipinfo.io/)
 Accurate IP address data that keeps pace with secure, specific, and forward-looking use cases.
-
-### Frontend (General)
-[Electron](https://www.electronjs.org/) Build cross-platform desktop apps with Javascript, HTML, and CSS. See `Flatpak` for distributing the application on Linux.
-
-[Tanstack Query](https://tanstack.com/query/latest)
-Powerful asynchronous state management for TS/JS, React, Solid, Vue and Svelte
-
-[DataTables](https://datatables.net/)
-Add advanced interaction controls to your HTML tables the free & easy way
-
-[TailwindCSS](https://tailwindcss.com/)
-Rapidly build modern websites without ever leaving your HTML.
-
-[Sass Lang](https://sass-lang.com/)
-Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
-
-[Styled Components](https://styled-components.com/)
-CSS for the `<Component>` Age
-
-[HTMX](https://htmx.org/docs/)
-htmx is a library that allows you to access modern browser features directly from HTML, rather than using javascript.
-
-[Alpine JS](https://alpinejs.dev/)
-Your new, lightweight, JavaScript framework.
-
-[PNpM](https://pnpm.io/)
-Fast, disk space efficient package manager
 
 ### React
 [React Hooks](https://react.dev/reference/react/hooks)
