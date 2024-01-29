@@ -62,8 +62,9 @@ A statically-typed curly-braces programming language designed for developing sma
 [Discord Me](https://discord.me/servers)
 Discover your next favorite hangout with Discord Me, where finding fun and engaging Discord servers is a breeze. It's a treasure hunt for communities that share your interests, from gaming to art, all easily accessible. Dive into a world of discovery, make new friends, and join conversations that light up your day!
 
-[Discord Python Wrapper](https://discordpy.readthedocs.io/en/stable/)
+[Discord.py](https://discordpy.readthedocs.io/en/stable/) discord.py is a modern, easy to use, feature-rich, and async ready API wrapper for Discord.
 
+[PyCord](https://docs.pycord.dev/en/stable/) A fork of `discord.py`
 ### E-book Readers
 [Librum-Reader](https://github.com/Librum-Reader)
 A modern and opensource ebook reading solution
