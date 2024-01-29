@@ -150,6 +150,8 @@ Celery is a simple, flexible, and reliable distributed system to process vast am
 [Requests](https://requests.readthedocs.io/en/latest/)
 Requests is an elegant and simple HTTP library for Python, built for human beings.
 
+[Motor](https://motor.readthedocs.io/en/stable/index.html) Asynchronous Python driver for [MongoDB](https://www.mongodb.com/docs/manual/)
+
 [Poetry](https://python-poetry.org/)
 Python packaging and dependency management made easy
 
