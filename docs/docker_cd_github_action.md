@@ -3,14 +3,16 @@ category: Continuous Deployment
 ---
 # Github Action to Deploy Dockerfile to Remote Registry
 
-Name the following file `docker_<remote_registry_name>_pkg.yaml` to the `workflows` directory in your `.github` directory.
+Name the following file `docker_<remote_registry_name>_pkg.yaml` and add it to the `workflows` directory in your `.github` directory.
 
 This file is currently configured to build and deploy an image to github packages. Since we are running our deployment as a Github Action we also benefit with having the github package that is created from the action associated with the repository that is running the action. 
 
 If you would like to change the remote registry update the domain value specified at `env.REGISTRY`. If you would like to update how this action is triggered update the `on` value.
+
+Currently this action is triggered from a github release.
  
 ```yaml
-#
+# .github/workflows/docker_docker_github_pkg.yaml
 name: Create and publish a Docker image
 
 # Configures this workflow to run every time a release is created.
@@ -60,6 +62,15 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+```
+
+Accompanying documentation to added to a project's readMe.md 
+
+```md
+This project utilizes [Github Actions](https://docs.github.com/en/packages/managing-github-packages-using-github-actions-workflows/publishing-and-installing-a-package-with-github-actions#publishing-a-package-using-an-action) for deploying a production ready docker container to the github container registry. For more information see [working with the container registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry).
+
+To push a new container image to github packages create a `release` from the `main` branch with a specified [git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging). The git tag should be labelled with a version number such as [1.2.3](https://github.com/docker/metadata-action?tab=readme-ov-file#tags-input).
 
 ```
 
