@@ -131,7 +131,7 @@ Now re-read the [create a bot account](https://discordpy.readthedocs.io/en/stabl
 ### Commands
 
 **Reddit Commands: RSS like updates for subreddits within channels**
-Permissions: Only a guild owner can invoke these commands.
+- Permissions: Only a guild owner can invoke these commands.
 
 | Command  | Description  |  Example  |
 |----------|--------------|-----------|
@@ -141,7 +141,7 @@ Permissions: Only a guild owner can invoke these commands.
 | `.subreddit prune` | Removes all subreddit rss feeds within a given channel | `.subreddit prune` |
 
 **RSS Feed Commands: RSS feed updates within your guild channels**
-Permissions: Only a guild owner can invoke these commands.
+- Permissions: Only a guild owner can invoke these commands.
 
 | Command | Description | Example |
 |---------|-------------|---------|

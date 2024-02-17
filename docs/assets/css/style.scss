@@ -57,6 +57,14 @@ hr {
     padding: 1rem;
 }
 
+table {
+    margin: 1rem 0;
+    table-layout: fixed !important;
+    td {
+        word-wrap: break-word !important;
+    }
+}
+
 #main_content {
     img {
         box-shadow: 1px 1px 5px 1px #fde047;
