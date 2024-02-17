@@ -20,7 +20,7 @@ accomplished with community support. Please click the `Tip Me` button to support
 ## Table of Contents
 - ### [Environment Variables](#environment-variables)
 - ### [Deploying Feed Bot](#feed-bot)
-- ### [Commands]
+- ### [Commands](#commands)
 
 ## Environment Variables
 **For Discord:**
@@ -120,7 +120,7 @@ To close the logs type `CTRL/CMD + C` and to close the ssh connection type `exit
 **Reddit Commands: RSS like updates for subreddits within channels**
 Permissions: Only a guild owner can invoke these commands.
 
-| command  | description  |  Example  |
+| Command  | Description  |  Example  |
 |----------|--------------|-----------|
 | `.subreddit ls` | List the subreddits this channel subscribes to. | `.subreddit ls` |
 | `.subreddit add <arg>` | Add subreddit(s) as an rss feed for this channel. | `.subreddit add cyberDeck,r/ROS` or `.subreddit add r/linux`|
@@ -130,7 +130,7 @@ Permissions: Only a guild owner can invoke these commands.
 **RSS Feed Commands: RSS feed updates within your guild channels**
 Permissions: Only a guild owner can invoke these commands.
 
-| command | description | Example |
+| Command | Description | Example |
 |---------|-------------|---------|
 | `.rss ls` | List the RSS Feeds that this channel subscribes to. | `.subreddit ls` |
 | `.rss add <arg>` | Adds website rss feeds to the channel. | `.subreddit add https://corbettreport.com/feed` or `.subreddit add https://unlimitedhangout.com/feed/,https://corbettreport.com/feed/` *trailing slash optional|
