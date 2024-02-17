@@ -50,6 +50,17 @@ See [asyncpraw documentation](https://asyncpraw.readthedocs.io/en/latest/getting
 
 For managing environment variables we suggest using [direnv](https://direnv.net/docs/installation.html)
 
+This is what our `.envrc` should look like.
+```envrc
+export BOT_TOKEN=<discord_bot_token_from_developer_portal>
+export REDDIT_CLIENT_ID=<application_id> # sent in email from reddit after registering app
+export REDDIT_CLIENT_SECRET=<client_secret>
+export REDDIT_USERNAME=<username>
+export REDDIT_PASSWORD=<password_to_login_to_reddit>
+export REDDIT_USER_AGENT=<custom_user_agent>
+export IMAGE_URL=<cloudfront_distribution_url_or_s3_url>
+```
+
 ## Deploying Feed Bot
 
 There are a variety of options available to you for deploying `Feed Bot` including on your machine. We will share with you how to deploy this bot to a [Digital Ocean](https://m.do.co/c/b82b00e77afc) droplet. We are choosing Digital Ocean for:
@@ -89,13 +100,13 @@ $ echo 'eval "$(direnv hook bash)"' >> .bashrc
 $ mkdir feed_bot && cd feed_bot
 ```
 
-Head to the [environment variables](#environment-variables) section and add them all (include `BOT_TOKEN=`) to a `.envrc` file.
+Head to the [environment variables](#environment-variables) section and add the env vars.
 
 ```bash
 # ~/feed_bot
 $ touch .envrc
 $ vim .envrc # add the environment variables key/value pairs and to save (:wq + ENTER)
-$ direnv allow .
+$ direnv allow . # you may need to close and reopen the connection to the droplet for direnv to be functional
 ```
 
 If you read above you know we'll need to copy the contents of [compose-prod.yaml](https://github.com/Audiosutras/feed_bot/blob/main/compose-prod.yaml) into a created `compose.yaml` file.
@@ -106,7 +117,7 @@ $ touch compose.yaml
 $ vim compose.yaml # paste contents of compose-prod.yaml when ready to save do (:wq + ENTER)
 ```
 
-Now lets run the bot in the background and see what are bot is doing.
+Now lets run the bot in the background and see what it is doing.
 ```bash
 # ~/feed_bot
 $ docker compose up -d
@@ -114,6 +125,8 @@ $ docker compose logs --follow bot
 ```
 
 To close the logs type `CTRL/CMD + C` and to close the ssh connection type `exit` in the terminal.
+
+Now re-read the [create a bot account](https://discordpy.readthedocs.io/en/stable/discord.html?highlight=creating%20bot%20account) `discord.py` tutorial. The only thing that is left to do is invite the bot to the discord server(s) you want it in.
 
 ### Commands
 
