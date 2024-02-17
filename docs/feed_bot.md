@@ -18,9 +18,9 @@ accomplished with community support. Please click the `Tip Me` button to support
 ---
 
 ## Table of Contents
-- ### [Environment Variables](#environment-variables)
-- ### [Deploying Feed Bot](#feed-bot)
-- ### [Commands](#commands)
+- [Environment Variables](#environment-variables)
+- [Deploying Feed Bot](#deploying-feed-bot)
+- [Commands](#commands)
 
 ## Environment Variables
 **For Discord:**
