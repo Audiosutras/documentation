@@ -1,5 +1,6 @@
 ---
 category: Discord Bots
+description: A discord bot for emulating an rss feed reader within your guild channels.
 ---
 # Feed Bot
 A discord bot for emulating an rss feed reader within your guild channels.
