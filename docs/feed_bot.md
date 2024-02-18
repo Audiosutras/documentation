@@ -133,6 +133,8 @@ Now re-read the [create a bot account](https://discordpy.readthedocs.io/en/stabl
 **Reddit Commands: RSS like updates for subreddits within channels**
 - Permissions: Only a guild owner can invoke these commands.
 
+![Image of Reddit Feeds In Action](assets/images/reddit-rss-screenshot.png)
+
 | Command  | Description  |  Example  |
 |----------|--------------|-----------|
 | `.subreddit ls` | List the subreddits this channel subscribes to. | `.subreddit ls` |
@@ -142,6 +144,8 @@ Now re-read the [create a bot account](https://discordpy.readthedocs.io/en/stabl
 
 **RSS Feed Commands: RSS feed updates within your guild channels**
 - Permissions: Only a guild owner can invoke these commands.
+
+![Image of RSS Add Feeds Command In Actions](assets/images/rss-add-command.png)
 
 | Command | Description | Example |
 |---------|-------------|---------|
