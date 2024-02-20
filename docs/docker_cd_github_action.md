@@ -51,7 +51,7 @@ jobs:
         with:
           images: ${%raw%}{{ env.REGISTRY }}{%endraw%}/${%raw%}{{ env.IMAGE_NAME }}{%endraw%}
           tags: |
-            type=semver,pattern={{version}}{%endraw%} # use git tag
+            type=semver,pattern={%raw%}{{version}}{%endraw%} # use git tag
       # This step uses the `docker/build-push-action` action to build the image, based on your repository's `Dockerfile`. If the build succeeds, it pushes the image to GitHub Packages.
       # It uses the `context` parameter to define the build's context as the set of files located in the specified path. For more information, see "[Usage](https://github.com/docker/build-push-action#usage)" in the README of the `docker/build-push-action` repository.
       # It uses the `tags` and `labels` parameters to tag and label the image with the output from the "meta" step.
