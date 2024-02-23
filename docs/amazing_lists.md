@@ -192,7 +192,7 @@ The ZAP full scan action runs the ZAP spider against the specified target (by de
 WARNING this action will perform attacks on the target website. You should only scan targets that you have permission to test. You should also check with your hosting company and any other services such as CDNs that may be affected before running this action. ZAP will also submit forms which could result in a large number of messages via, for example, 'Contact us' or 'comment' forms.
 
 ### Self-Hosting
-[Movie Web](https://github.com/movie-web) - Movie-web is a web app for watching movies easily. This service works by displaying video files from third-party providers inside an intuitive and aesthetic user interface. ([Demo](https://erynith.github.io/movie-web-instances/p)) ([Self Hosting Docs](https://docs-8cy.pages.dev/)) `MIT` `Docker/Typescript`
+[Movie Web](https://github.com/movie-web) - Movie-web is a web app for watching movies easily. This service works by displaying video files from third-party providers inside an intuitive and aesthetic user interface. ([Active Instances](https://erynith.github.io/movie-web-instances/p)) ([Self Hosting Docs](https://movie-web.github.io/docs)) ([Providers Docs](https://movie-web.github.io/providers/)) `MIT` `Docker/Typescript`
 
 [Anna's Archive](https://annas-software.org/AnnaArchivist/annas-archive) - A web app that hosts a search engine for books, science papers, comics, magazines, and more. ([Demo](https://annas-archive.org/)) `Creative Commons Zero v1.0 Universal` `Docker/Python`
 
