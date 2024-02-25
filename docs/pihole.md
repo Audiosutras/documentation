@@ -18,19 +18,17 @@ category: Hosting
 
 ## Background
 
-[Pi-hole](https://docs.pi-hole.net/) is a DNS sinkhole that is effective at blocking ads and malware by closing connections to blacklisted domains before a client can connect to them. [Unbound](https://nlnetlabs.nl/projects/unbound/about/) is a validating, recursive, caching DNS resolver that increase the privacy of its users.
+[Pi-hole](https://docs.pi-hole.net/) is a DNS sinkhole that is effective at blocking ads and malware by closing connections to blacklisted domains before a client can connect to them. [Unbound](https://nlnetlabs.nl/projects/unbound/about/) is a validating, recursive, caching DNS resolver that increases the privacy of its users.
 
-This project provision three docker containers on a user's chosen machine that always run unless stopped; one for Pihole and the other Unbound. By default, PiHole is configured to use Unbound as its only upstream DNS server. This cuts Google, Cloudflare, and other DNS providers out from having a record of the domains you have requested to visit. In simple terms, this always means the sites you have visited. However note that your Internet Service Provider will still be able to access your DNS history without any obfuscation. For more information I found [this](https://www.reddit.com/r/pihole/comments/ydkkup/what_are_the_benefits_to_unbound/) reddit thread helpful.
+This project provisions two docker containers on a user's chosen machine that always run unless stopped; one for Pihole and the other Unbound. When PiHole is configured to use Unbound as its only upstream DNS server it cuts Google, Cloudflare, and other DNS providers out from having a record of the domains you have requested. In simple terms, this means the sites you have visited. However note that your Internet Service Provider will still be able to access your DNS history without any obfuscation. For more information I found [this](https://www.reddit.com/r/pihole/comments/ydkkup/what_are_the_benefits_to_unbound/) reddit thread helpful.
 
-The benefits of running pi-hole and unbound in docker containers are many. To speak to a few, it is the ability to run this software across operating system (linux, mac, windows) and across computing devices. You can benefit from adblocking and malware protection on your devices at home by running pihole containerized on a raspberry pi. You can also have this benefit on your laptop when connected to an external network that is not your own like hotel or airport wifi.
-
-Unbound privacy benefits as your configured DNS resolver, but it's important to mention before starting that you will still be able to disable this resolver and use Cloudflare for example for the benefits of internet speed.
+The benefits of running pi-hole and unbound in docker containers are many. To speak to a few, it is the ability to run this software across operating system (linux, mac, windows) and across computing devices. You can benefit from adblocking and malware protection on your devices at home by running pihole on a raspberry pi attached to your home network. You can also have this benefit on your machine when connected to an external network like hotel or airport wifi.
 
 Let's get started.
 
 ## DNS Resolver CheatSheet
 
-The table below documents the port and internal IP address of custom dns resolvers that the instance of Pihole comes pre-configured with. 
+The table below documents the port and internal IP address of the custom dns resolvers that this instance of Pihole comes pre-configured with. 
 
 | DNS Resolver | Internal IP Address |
 | ------- | ------------------- |
@@ -70,7 +68,7 @@ If nothing was returned when running the above commands follow docker's recommen
 
 ### Direnv
 
-You can export the following environment variables but [direnv](https://direnv.net/docs/installation.html) is a great you utility to use to have the environment variables automatically exported for you when the project is in your working directory.
+You can export the environment variables we'll discuss but [direnv](https://direnv.net/docs/installation.html) is a great utility to use to have the environment variables automatically exported for you when this project is in your working directory.
 
 For ubuntu-based systems:
 ```bash
@@ -113,7 +111,7 @@ $ source ~/.zshrc
 
     ```envrc
     export PIHOLE_PWD=<super secret password for logging into pihole dashboard>
-    # Switch With your local TimeZone, ex: PIHOLE_TZ=America/New_York 
+    # Switch With your local TimeZone, ex: export PIHOLE_TZ=America/New_York 
     export PIHOLE_TZ=<timezone>
     export PIHOLE_DNS=<dns addresses>
     ```
@@ -149,6 +147,8 @@ $ source ~/.zshrc
         # make sure to write down the first entry in this list
     -> hostname -I
     ```
+
+    **Note**: The machine you placed pihole on would benefit from having a [static IP address](https://www.tomshardware.com/how-to/static-ip-raspberry-pi)
 
 4. Confirm PiHole is the selected upstream DNS servers selected in Step 1
 
