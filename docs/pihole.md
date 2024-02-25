@@ -9,6 +9,7 @@ category: Hosting
 - [Download The Latest Release](#download-the-latest-release)
 - [Prerequiste Installation](#prerequiste-installation)
     - [Docker & Docker Compose](#docker--docker-compose)
+    - [Direnv](#direnv)
 - [Running PiHole & Unbound (Linux / Mac OS)](#running-pihole--unbound-linuxmac-os)
     - [Ubuntu Additional Steps](#ubuntu-additional-steps)
 - [More Useful Resources & Articles](#more-useful-resources--articles)
@@ -67,31 +68,65 @@ If nothing was returned when running the above commands follow docker's recommen
 - [Casa OS](https://github.com/IceWhaleTech/CasaOS)
 - [Hypriot OS](https://blog.hypriot.com/downloads/)
 
+### Direnv
+
+You can export the following environment variables but [direnv](https://direnv.net/docs/installation.html) is a great you utility to use to have the environment variables automatically exported for you when the project is in your working directory.
+
+For ubuntu-based systems:
+```bash
+$ apt install direnv
+```
+Via homebrew:
+```bash
+$ brew install direnv
+```
+You may need to re-open your terminal shell here. Now let's configure our shell.
+
+For bash:
+```bash
+$ echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
+$ source ~/.bashrc
+``` 
+
+For zsh:
+```bash
+$ echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
+$ source ~/.zshrc
+```
+
 ## Running PiHole & Unbound (Linux/Mac OS)
 
 - [Download the latest release](#download-the-latest-release)
 
-1. Create an `.env` file in the same directory as the `docker-compose.yml` file
+1. Create an `.envrc` file in the same directory as the `docker-compose.yml` file
 
     ```bash
     -> ls
     docker-compose.yml  READMe.md
-    -> touch .env && sudo nano .env # opens nano editor
+    -> touch .envrc && vim .envrc # opens vim editor
     ```
 
-    Copy & Paste the code block below into the `nano editor`.
+    Copy & Paste the code block below into the `vim editor`.
     - Replace `<super secret password for logging into pihole dashboard>` with your password.
     - Replace `<timezone>` with your timezone. For example `America/New_York`
     - Replace `<dns addresses>` with the upstream dns you would like to use. If you would like to use `Unbound` write `'10.1.1.3#53'` or if you would like to use `Cloudflare` and `Quad 9` write `'1.1.1.1;9.9.9.9'` for example. There are more options available in the pihole admin than this. This just selects the default upstream providers that will be checked in the admin on system start. 
 
-    ```env
-    PIHOLE_PWD=<super secret password for logging into pihole dashboard>
+    ```envrc
+    export PIHOLE_PWD=<super secret password for logging into pihole dashboard>
     # Switch With your local TimeZone, ex: PIHOLE_TZ=America/New_York 
-    PIHOLE_TZ=<timezone>
-    PIHOLE_DNS=<dns addresses>
+    export PIHOLE_TZ=<timezone>
+    export PIHOLE_DNS=<dns addresses>
     ```
 
-    Press `CTRL + X` then `Y` and then `ENTER` to exit the editor.
+    `:wq` then `ENTER` to exit the vim editor.
+
+    Now allow `direnv` to automatically export environment variables by running:
+
+    ```bash
+    $ direnv allow .
+    ```
+
+    Each time changes are made to the `.envrc` file this command will need to be run.
 
 2. Run the project detached as a background process. 
 
@@ -159,7 +194,7 @@ Add `dns=default` under `[main]` section in `/etc/NetworkManager/NetworkManager.
 dns=default
 ...
 ```
-Press `CTRL + X` then `Y` and then `ENTER` to exit the editor.
+`:wq` then `ENTER` to exit the vim editor.
 
 Delete the sysmlink `/etc/resolv.conf`
 
