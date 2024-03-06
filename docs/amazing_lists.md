@@ -72,6 +72,8 @@ A modern and opensource ebook reading solution
 [Bookworm](https://github.com/babluboy/bookworm)
 A simple ebook reader for Elementary OS
 
+[Foliate](https://johnfactotum.github.io/foliate/) - [Source Code](https://github.com/johnfactotum/foliate) Modern e-book reader of the quality of Librum-Reader except without cloud syncing and the need for an account.
+
 ### Frontend (General)
 [Electron](https://www.electronjs.org/) Build cross-platform desktop apps with Javascript, HTML, and CSS. See `Flatpak` for distributing the application on Linux.
 
