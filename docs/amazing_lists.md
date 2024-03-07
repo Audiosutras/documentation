@@ -179,7 +179,7 @@ Install and Run Python Applications in Isolated Environments
 Accurate IP address data that keeps pace with secure, specific, and forward-looking use cases.
 
 ### Qortal
-[The Qortal Network](https://qortal.org/), Truly Decentralized, Community-Driven and Developed, Completely Custom Built, and Truly Decentralized. With its Unique Egalitarian Consensus Protocol, Leveling System, and Blockchain-Secured Distributed Data Network, QORTAL is Designed To Create A Completely Secure and Liberating Digital World. - [Development Portal](https://qortal.dev/) - [Documentation](https://qortal.dev/docs/api) - [Discord Server](https://discord.com/invite/54UyhB7) 
+[The Qortal Network](https://qortal.org/), Truly Decentralized, Community-Driven and Developed, Completely Custom Built, and Truly Decentralized. With its Unique Egalitarian Consensus Protocol, Leveling System, and Blockchain-Secured Distributed Data Network, QORTAL is Designed To Create A Completely Secure and Liberating Digital World. - [Development Portal](https://qortal.dev/) - [Wiki](https://wiki.qortal.org/doku.php?id=home) - [Documentation](https://qortal.dev/docs/api) - [Discord Server](https://discord.com/invite/54UyhB7) 
 
 ### React
 [React Hooks](https://react.dev/reference/react/hooks)
