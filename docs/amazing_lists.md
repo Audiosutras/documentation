@@ -65,6 +65,7 @@ Discover your next favorite hangout with Discord Me, where finding fun and engag
 [Discord.py](https://discordpy.readthedocs.io/en/stable/) discord.py is a modern, easy to use, feature-rich, and async ready API wrapper for Discord.
 
 [PyCord](https://docs.pycord.dev/en/stable/) A fork of `discord.py`
+
 ### E-book Readers
 [Librum-Reader](https://github.com/Librum-Reader)
 A modern and opensource ebook reading solution
@@ -112,6 +113,12 @@ Fast, disk space efficient package manager
 
 ### Linux Distributions 
 [Linux Mint](https://www.linuxmint.com)
+
+### LORA Radio Communications
+
+[Meshtastic](https://meshtastic.org/) is open source, off-grid, decentralized, mesh network built to run on affordable, low-power devices. - [Source Code](https://github.com/meshtastic) - [Documentation](https://meshtastic.org/docs/introduction/) - [Discord Server](https://discord.com/invite/ktMAKGBnBs)
+
+[Reticulum](https://reticulum.network/) is the cryptography-based networking stack for building local and wide-area networks with readily available hardware. Reticulum can continue to operate even in adverse conditions with very high latency and extremely low bandwidth. The vision of Reticulum is to allow anyone to operate their own sovereign communication networks, and to make it cheap and easy to cover vast areas with a myriad of independent, interconnectable and autonomous networks. Reticulum is Unstoppable Networks for The People. - [Source Code](https://github.com/markqvist/Reticulum) - [Documentation](https://markqvist.github.io/Reticulum/manual/) - [Matrix Channel](https://matrix.to/#/#reticulum:matrix.org)
 
 ### Matrix
 [Website Here](https://matrix.org/) An open network for secure, decentralized communcation
@@ -172,7 +179,7 @@ Install and Run Python Applications in Isolated Environments
 Accurate IP address data that keeps pace with secure, specific, and forward-looking use cases.
 
 ### Qortal
-[The Qortal Network](https://qortal.org/), Truly Decentralized, Community-Driven and Developed, Completely Custom Built, and Truly Decentralized. With its Unique Egalitarian Consensus Protocol, Leveling System, and Blockchain-Secured Distributed Data Network, QORTAL is Designed To Create A Completely Secure and Liberating Digital World. - [Development Portal](https://qortal.dev/) - [Documentation](https://qortal.dev/docs/api) 
+[The Qortal Network](https://qortal.org/), Truly Decentralized, Community-Driven and Developed, Completely Custom Built, and Truly Decentralized. With its Unique Egalitarian Consensus Protocol, Leveling System, and Blockchain-Secured Distributed Data Network, QORTAL is Designed To Create A Completely Secure and Liberating Digital World. - [Development Portal](https://qortal.dev/) - [Documentation](https://qortal.dev/docs/api) - [Discord Server](https://discord.com/invite/54UyhB7) 
 
 ### React
 [React Hooks](https://react.dev/reference/react/hooks)
