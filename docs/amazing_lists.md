@@ -125,6 +125,8 @@ Fast, disk space efficient package manager
 
 [Composer](https://getcomposer.org/) A Dependency Manager for PHP
 
+### Pine64
+[Pine 64](https://pine64.com/) is a community-driven company focused on creating high-quality, low-cost ARM devices and, more recently, RISC-V devices for individuals and businesses around the globe. [Wiki / Docs](https://wiki.pine64.org/wiki/Main_Page)
 
 ### Python
 [Download Here]((https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa))
@@ -169,6 +171,9 @@ Install and Run Python Applications in Isolated Environments
 [IP Info](https://ipinfo.io/)
 Accurate IP address data that keeps pace with secure, specific, and forward-looking use cases.
 
+### Qortal
+[The Qortal Network](https://qortal.org/), Truly Decentralized, Community-Driven and Developed, Completely Custom Built, and Truly Decentralized. With its Unique Egalitarian Consensus Protocol, Leveling System, and Blockchain-Secured Distributed Data Network, QORTAL is Designed To Create A Completely Secure and Liberating Digital World. - [Development Portal](https://qortal.dev/) - [Documentation](https://qortal.dev/docs/api) 
+
 ### React
 [React Hooks](https://react.dev/reference/react/hooks)
 Introduced in version 16+, React Hooks are designed to be a functional approach to build react applications.
@@ -205,3 +210,4 @@ WARNING this action will perform attacks on the target website. You should only 
 The intuitive store for Vue.js
 
 [Nuxt.js](https://github.com/nuxt/nuxt)
+
