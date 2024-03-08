@@ -56,6 +56,10 @@ A statically-typed curly-braces programming language designed for developing sma
 ### Cheatsheets
 [Nano Editor](https://www.nano-editor.org/dist/latest/cheatsheet.html)
 
+[TMux](https://cheatsheets.zip/tmux) - `man tmux`
+
+[Vim](https://devhints.io/vim) - `:help`
+
 ### Discord
 [Discord Developer Portal](https://discord.com/developers/applications)
 
