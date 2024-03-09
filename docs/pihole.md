@@ -156,7 +156,7 @@ $ source ~/.zshrc
     - Input the `PIHOLE_PWD` password you chose in step 1 to access the admin
     - Navigate to `Settings`, click on the `DNS` tab. Under `Upstream DNS` `Custom 1 (IPv4)` you should see checked `10.1.1.3#53`. This is `Unbound`'s internal IP address. 
     - You can uncheck this and use any of the other upstream dns servers like `Cloudflare` and `Quad9` whenever you want to.
-    - *Note* Unbound being checked is contigent upon what upsteam dns providers you selected for `PIHOLE_DNS` in Step 1. If you chose `'1.1.1.1;9.9.9.9` you will see `Cloudflare` and `Quad 9` checked.
+    - *Note* Unbound being checked is contigent upon what upsteam dns providers you selected for `PIHOLE_DNS` in Step 1. If you chose `"1.1.1.1;9.9.9.9"` you will see `Cloudflare` and `Quad 9` checked.
 
 5. Start using Pihole - [Article: Configure Clients to use Pihole](https://discourse.pi-hole.net/t/how-do-i-configure-my-devices-to-use-pi-hole-as-their-dns-server/245)
 
