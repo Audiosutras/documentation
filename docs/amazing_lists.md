@@ -214,6 +214,9 @@ WARNING this action will perform attacks on the target website. You should only 
 
 [Anna's Archive](https://annas-software.org/AnnaArchivist/annas-archive) - A web app that hosts a search engine for books, science papers, comics, magazines, and more. ([Demo](https://annas-archive.org/)) `Creative Commons Zero v1.0 Universal` `Docker/Python`
 
+### Single Board Computers
+[Raspberry Pi](https://www.raspberrypi.com/), designers of single-board and modular computers, built on the Arm architecture, and running the Linux operating system  - [Documentation](https://www.raspberrypi.com/documentation/computers/)
+
 ### Vue
 [Vue API Reference](https://vuejs.org/api/)
 
