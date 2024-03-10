@@ -91,7 +91,7 @@ $ nvim
 
 You can enable/disable plugins with `:LazyExtras` and using `x` to select plugins from the menu. Press `:q` to exit. Make sure to familiarize yourself with standard vim commands using `:help`. You learn more about plugins in use by seeing what plugins are enabling and navigating to there git repositories.
 
-## tmux
+## Tmux
 
 [tmux](https://github.com/tmux/tmux/wiki) is a terminal multiplexer. It lets you switch easily between several programs in one terminal, detach them (they keep running in the background) and reattach them to a different terminal.
 
