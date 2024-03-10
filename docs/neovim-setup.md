@@ -99,16 +99,16 @@ You can enable/disable plugins with `:LazyExtras` and using `x` to select plugin
 
 In order for icons to shows up with the nvim editor 9 out of 10 times you will need a patched font. These are fonts that include the icons that are often times missing from other sources. You can download a patched font of your choice over at [Nerd Fonts](https://www.nerdfonts.com/).
 
-1. Create or ensure `~/.local/share/fonts` directory exists on your file system
-2. Copy the link address for the font you want to download from the `Download` button and the Command
+- Create or ensure `~/.local/share/fonts` directory exists on your file system
+- Copy the link address for the font you want to download from the `Download` button and the Command
 
 ```bash
 $ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/AurulentSansMono.zip ~/.local/share/fonts/
 ```
 
-3. `unzip` the file and check the file extension. The file extension could end in `otf` or `ttf`. Create a directory within fonts that matches the file extension(s). Move the unzipped files into the corresponding file extension directory within the fonts directory.
+- `unzip` the file and check the file extension. The file extension could end in `otf` or `ttf`. Create a directory within fonts that matches the file extension(s). Move the unzipped files into the corresponding file extension directory within the fonts directory.
 
-4. Update [alacritty](#alacritty) to use the patched. Sticking with our example.
+- Update [alacritty](#alacritty) to use the patched. Sticking with our example.
 
 ```yaml
 $ nvim ~/.config/alacritty/alacritty.yml
