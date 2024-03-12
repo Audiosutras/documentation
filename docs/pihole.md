@@ -144,7 +144,7 @@ $ source ~/.zshrc
 
    Pihole and Unbound will restart automatically unless explicitly stopped by the user.
 
-   If you are running this project on a raspberry pi or a device using the arm64 architecture and you plan using unbound, you will need to modify the `unbound.image` value in the `docker-compose.yml` file. Change `mvance/unbound:latest` to `mvance/unbound-rpi:latest`. Save the file and then run `docker-compose up -d`.
+   If you are running this project on a raspberry pi or a device using the arm64 architecture and you plan on using unbound, you will need to modify the `unbound.image` value in the `docker-compose.yml` file. Change `mvance/unbound:latest` to `mvance/unbound-rpi:latest`. Save the file and then run `docker-compose up -d`.
 
 3. Get the IP Address of the Pihole instance
 
