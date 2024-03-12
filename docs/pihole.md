@@ -38,12 +38,12 @@ The table below documents the port and internal IP address of the custom dns res
 
 ## Download The Latest Release
 
-- Download the [latest release](https://github.com/Audiosutras/pihole-dockercompose/releases) (Currently `v1.0.2`)
+- Download the [latest release](https://github.com/Audiosutras/pihole-dockercompose/releases) (Currently `v1.0.3`)
 
   ```bash
-  -> wget https://github.com/Audiosutras/pihole-dockercompose/archive/refs/tags/v1.0.2.tar.gz
-  -> tar -xvf v1.0.2.tar.gz
-  -> rm v1.0.2.tar.gz && cd pihole-dockercompose-1.0.2
+  -> wget https://github.com/Audiosutras/pihole-dockercompose/archive/refs/tags/v1.0.3.tar.gz
+  -> tar -xvf v1.0.3.tar.gz
+  -> rm v1.0.3.tar.gz && cd pihole-dockercompose-1.0.3
   ```
 
 ## Prerequiste Installation
