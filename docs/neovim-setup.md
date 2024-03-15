@@ -12,6 +12,7 @@ category: Command Line
 - [Neovim](#neovim)
 - [Tmux](#tmux)
 - [Patched Fonts](#patched-fonts)
+- [Recommended Additional Packages](#recommended-additional-packages)
 
 ## Alacritty
 
@@ -120,3 +121,8 @@ font:
 ```
 
 [alacritty config cheatsheet](https://sunnnychan.github.io/cheatsheet/linux/config/alacritty.yml.html)
+
+## Recommended Additional Packages
+
+- [ripgrep](https://github.com/BurntSushi/ripgrep) This package is required by `telescope.nvim` to use the `live_grep` feature
+- [lazydocker](https://github.com/jesseduffield/lazydocker) A simple terminal UI for both docker and docker-compose. Make sure to read [this](https://github.com/jesseduffield/lazydocker?tab=readme-ov-file#why-isnt-my-docker-compose-environment-being-used) for configuring `docker compose`
