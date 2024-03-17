@@ -1,12 +1,15 @@
 ---
 category: Miscellaneous
 ---
+
 # Amazing Lists for Machine Users
+
 A collection of managed lists on github and some of my own for progamming and operating system quality of life.
 
 ---
 
 ## Github Managed Lists
+
 [Awesome](https://github.com/sindresorhus/awesome)
 😎 Awesome lists about all kinds of interesting topics
 
@@ -50,10 +53,12 @@ A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners,
 ## Self-managed List
 
 ### Blockchain
+
 [Solidity](https://soliditylang.org/)
 A statically-typed curly-braces programming language designed for developing smart contracts that run on Ethereum.
 
 ### Cheatsheets
+
 [Nano Editor](https://www.nano-editor.org/dist/latest/cheatsheet.html)
 
 [TMux](https://cheatsheets.zip/tmux) - `man tmux`
@@ -61,6 +66,7 @@ A statically-typed curly-braces programming language designed for developing sma
 [Vim](https://devhints.io/vim) - `:help`
 
 ### Discord
+
 [Discord Developer Portal](https://discord.com/developers/applications)
 
 [Discord Me](https://discord.me/servers)
@@ -71,6 +77,7 @@ Discover your next favorite hangout with Discord Me, where finding fun and engag
 [PyCord](https://docs.pycord.dev/en/stable/) A fork of `discord.py`
 
 ### E-book Readers
+
 [Librum-Reader](https://github.com/Librum-Reader)
 A modern and opensource ebook reading solution
 
@@ -80,6 +87,7 @@ A simple ebook reader for Elementary OS
 [Foliate](https://johnfactotum.github.io/foliate/) - [Source Code](https://github.com/johnfactotum/foliate) Modern e-book reader of the quality of Librum-Reader except without cloud syncing and the need for an account.
 
 ### Frontend (General)
+
 [Electron](https://www.electronjs.org/) Build cross-platform desktop apps with Javascript, HTML, and CSS. See `Flatpak` for distributing the application on Linux.
 
 [Tanstack Query](https://tanstack.com/query/latest)
@@ -107,15 +115,18 @@ Your new, lightweight, JavaScript framework.
 Fast, disk space efficient package manager
 
 ### Google
+
 [Clasp](https://github.com/google/clasp) -
 [Command Line Apps Script Projects](https://developers.google.com/apps-script/guides/clasp)
 
 [Setting up your OAuth consent screen](https://support.google.com/cloud/answer/10311615#user-type&zippy=%2Cin-production) You must configure an OAuth consent screen before using an OAuth 2.0 client ID. This article describes OAuth consent screen settings and their impact on how your Google Cloud Platform project requests OAuth scopes from a Google Account.
 
 ### Linux Development
+
 [Flatpak](https://docs.flatpak.org/en/latest/index.html) Learn to build and distribute Linux native desktop applications using Flatpak.
 
-### Linux Distributions 
+### Linux Distributions
+
 [Linux Mint](https://www.linuxmint.com)
 
 ### LORA Radio Communications
@@ -125,25 +136,35 @@ Fast, disk space efficient package manager
 [Reticulum](https://reticulum.network/) is the cryptography-based networking stack for building local and wide-area networks with readily available hardware. Reticulum can continue to operate even in adverse conditions with very high latency and extremely low bandwidth. The vision of Reticulum is to allow anyone to operate their own sovereign communication networks, and to make it cheap and easy to cover vast areas with a myriad of independent, interconnectable and autonomous networks. Reticulum is Unstoppable Networks for The People. - [Source Code](https://github.com/markqvist/Reticulum) - [Documentation](https://markqvist.github.io/Reticulum/manual/) - [Matrix Channel](https://matrix.to/#/#reticulum:matrix.org)
 
 ### Matrix
+
 [Website Here](https://matrix.org/) An open network for secure, decentralized communcation
 
 [Github Organization](https://github.com/matrix-org)
 
+### Pentesting tools
+
+[Hak5](https://shop.hak5.org/) is industry leading hacker tools & award winning hacking shows for red teams, pentesters, cyber security students and IT professionals.
+
+[Kali Linux](https://www.kali.org/) is a Linux distribution designed for digital forensics and penetration testing.
+
 ### PHP
-[Download Here]((https://formulae.brew.sh/formula/php#default))
+
+[Download Here](<(https://formulae.brew.sh/formula/php#default)>)
 
 [Laravel](https://laravel.com/) The PhP Framework for Web Artisans
 
 [Composer](https://getcomposer.org/) A Dependency Manager for PHP
 
 ### Pine64
+
 [Pine 64](https://pine64.com/) is a community-driven company focused on creating high-quality, low-cost ARM devices and, more recently, RISC-V devices for individuals and businesses around the globe. [Wiki / Docs](https://wiki.pine64.org/wiki/Main_Page)
 
 ### Python
-[Download Here]((https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa))
+
+[Download Here](<(https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa)>)
 
 [Pallets Projects](https://github.com/pallets)
-    
+
 - [Click](https://github.com/pallets/click): Python composable command line interface toolkit
 - [Flask](https://github.com/pallets/flask): The Python micro framework for building web applications.
 - [Jinja](https://github.com/pallets/jinja): A very fast and expressive template engine.
@@ -183,9 +204,11 @@ Install and Run Python Applications in Isolated Environments
 Accurate IP address data that keeps pace with secure, specific, and forward-looking use cases.
 
 ### Qortal
-[The Qortal Network](https://qortal.org/), Truly Decentralized, Community-Driven and Developed, Completely Custom Built, and Truly Decentralized. With its Unique Egalitarian Consensus Protocol, Leveling System, and Blockchain-Secured Distributed Data Network, QORTAL is Designed To Create A Completely Secure and Liberating Digital World. - [Development Portal](https://qortal.dev/) - [Wiki](https://wiki.qortal.org/doku.php?id=home) - [Documentation](https://qortal.dev/docs/api) - [Discord Server](https://discord.com/invite/54UyhB7) 
+
+[The Qortal Network](https://qortal.org/), Truly Decentralized, Community-Driven and Developed, Completely Custom Built, and Truly Decentralized. With its Unique Egalitarian Consensus Protocol, Leveling System, and Blockchain-Secured Distributed Data Network, QORTAL is Designed To Create A Completely Secure and Liberating Digital World. - [Development Portal](https://qortal.dev/) - [Wiki](https://wiki.qortal.org/doku.php?id=home) - [Documentation](https://qortal.dev/docs/api) - [Discord Server](https://discord.com/invite/54UyhB7)
 
 ### React
+
 [React Hooks](https://react.dev/reference/react/hooks)
 Introduced in version 16+, React Hooks are designed to be a functional approach to build react applications.
 
@@ -199,6 +222,7 @@ A Predictable State Container for JS Apps
 The React Framework for the Web. Links to docs for Next.js projects using app router rather than page router
 
 ### Security
+
 [ZaProxy](https://github.com/zaproxy/zaproxy)
 The Zed Attack Proxy (ZAP) is one of the world’s most popular free security tools and is actively maintained by a dedicated international team of volunteers. It can help you automatically find security vulnerabilities in your web applications while you are developing and testing your applications. It's also a great tool for experienced pentesters to use for manual security testing.
 
@@ -210,18 +234,20 @@ The ZAP full scan action runs the ZAP spider against the specified target (by de
 WARNING this action will perform attacks on the target website. You should only scan targets that you have permission to test. You should also check with your hosting company and any other services such as CDNs that may be affected before running this action. ZAP will also submit forms which could result in a large number of messages via, for example, 'Contact us' or 'comment' forms.
 
 ### Self-Hosting
+
 [Movie Web](https://github.com/movie-web) - Movie-web is a web app for watching movies easily. This service works by displaying video files from third-party providers inside an intuitive and aesthetic user interface. ([Active Instances](https://erynith.github.io/movie-web-instances/p)) ([Self Hosting Docs](https://movie-web.github.io/docs)) ([Providers Docs](https://movie-web.github.io/providers/)) `MIT` `Docker/Typescript`
 
 [Anna's Archive](https://annas-software.org/AnnaArchivist/annas-archive) - A web app that hosts a search engine for books, science papers, comics, magazines, and more. ([Demo](https://annas-archive.org/)) `Creative Commons Zero v1.0 Universal` `Docker/Python`
 
 ### Single Board Computers
-[Raspberry Pi](https://www.raspberrypi.com/), designers of single-board and modular computers, built on the Arm architecture, and running the Linux operating system  - [Documentation](https://www.raspberrypi.com/documentation/computers/)
+
+[Raspberry Pi](https://www.raspberrypi.com/), designers of single-board and modular computers, built on the Arm architecture, and running the Linux operating system - [Documentation](https://www.raspberrypi.com/documentation/computers/)
 
 ### Vue
+
 [Vue API Reference](https://vuejs.org/api/)
 
 [Pinia](https://pinia.vuejs.org/)
 The intuitive store for Vue.js
 
 [Nuxt.js](https://github.com/nuxt/nuxt)
-
