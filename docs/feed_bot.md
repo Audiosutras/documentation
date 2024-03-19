@@ -2,28 +2,27 @@
 category: Discord Bots
 description: A discord bot for emulating an rss feed reader within your guild channels.
 ---
+
 # Feed Bot
+
 A discord bot for emulating an rss feed reader within your guild channels.
 
-[Source Code](https://github.com/Audiosutras/feed_bot)
-    - [Full Documentation](https://github.com/Audiosutras/feed_bot/blob/main/README.md)
-    - [MIT License](https://github.com/Audiosutras/feed_bot/blob/main/MIT-LICENSE.txt)
-    - [Issues](https://github.com/Audiosutras/feed_bot/issues)
-    - [Releases](https://github.com/Audiosutras/feed_bot/releases)
-    - [Docker Container Images](https://github.com/Audiosutras/feed_bot/pkgs/container/feed_bot)
+[Source Code](https://github.com/Audiosutras/feed_bot) - [Full Documentation](https://github.com/Audiosutras/feed_bot/blob/main/README.md) - [MIT License](https://github.com/Audiosutras/feed_bot/blob/main/MIT-LICENSE.txt) - [Issues](https://github.com/Audiosutras/feed_bot/issues) - [Releases](https://github.com/Audiosutras/feed_bot/releases) - [Docker Container Images](https://github.com/Audiosutras/feed_bot/pkgs/container/feed_bot)
 
-**Note:** I am making this bot available under MIT license that includes giving you the right to use my bot for commercial use. I strongly encourage you to do donate to me at least $5 dollars if 
-you have the means. I would like to be able to continue making open source software and this can be 
+**Note:** I am making this bot available under MIT license that includes giving you the right to use my bot for commercial use. I strongly encourage you to do donate to me at least $5 dollars if
+you have the means. I would like to be able to continue making open source software and this can be
 accomplished with community support. Please click the `Tip Me` button to support my work.
 
 ---
 
 ## Table of Contents
+
 - [Environment Variables](#environment-variables)
 - [Deploying Feed Bot](#deploying-feed-bot)
 - [Commands](#commands)
 
 ## Environment Variables
+
 **For Discord:**
 
 Add `BOT_TOKEN` environment variable. See the tutorial from `discord.py` on how to [create a bot account](https://discordpy.readthedocs.io/en/stable/discord.html?highlight=creating%20bot%20account).
@@ -33,6 +32,7 @@ Make sure to enable the `Message Content` intent for the bot whose token you are
 **For Reddit:**
 
 Add the following environment variables:
+
 ```env
 REDDIT_CLIENT_ID=<application_id> # sent in email from reddit after registering app
 REDDIT_CLIENT_SECRET=<client_secret>
@@ -40,8 +40,8 @@ REDDIT_USERNAME=<username>
 REDDIT_PASSWORD=<password_to_login_to_reddit>
 REDDIT_USER_AGENT=<custom_user_agent>
 ```
-See [asyncpraw documentation](https://asyncpraw.readthedocs.io/en/latest/getting_started/authentication.html) for more information.
 
+See [asyncpraw documentation](https://asyncpraw.readthedocs.io/en/latest/getting_started/authentication.html) for more information.
 
 **For Images:**
 
@@ -52,6 +52,7 @@ See [asyncpraw documentation](https://asyncpraw.readthedocs.io/en/latest/getting
 For managing environment variables we suggest using [direnv](https://direnv.net/docs/installation.html)
 
 This is what our `.envrc` should look like.
+
 ```envrc
 export BOT_TOKEN=<discord_bot_token_from_developer_portal>
 export REDDIT_CLIENT_ID=<application_id> # sent in email from reddit after registering app
@@ -65,10 +66,12 @@ export IMAGE_URL=<cloudfront_distribution_url_or_s3_url>
 ## Deploying Feed Bot
 
 There are a variety of options available to you for deploying `Feed Bot` including on your machine. We will share with you how to deploy this bot to a [Digital Ocean](https://m.do.co/c/b82b00e77afc) droplet. We are choosing Digital Ocean for:
-1) ease of use through the GUI and [CLI](https://docs.digitalocean.com/reference/doctl/)
-2) 100% uptime and resilient infrastructure that only a cloud platform can provide
+
+1. ease of use through the GUI and [CLI](https://docs.digitalocean.com/reference/doctl/)
+2. 100% uptime and resilient infrastructure that only a cloud platform can provide
 
 Whether hosting on Digital Ocean, another provider, or your local machine make sure that you have [Docker](https://docs.docker.com/) installed.
+
 - Once Docker is installed create a directory called `feed_bot`.
 - Inside of this directory create a `compose.yaml` file.
 - Copy the contents of [compose-prod.yaml](https://github.com/Audiosutras/feed_bot/blob/main/compose-prod.yaml) and paste it into the `compose.yaml` file and save the file.
@@ -89,9 +92,11 @@ Whether hosting on Digital Ocean, another provider, or your local machine make s
 **Interact with your droplet**
 
 Run:
+
 ```bash
 $ doctl compute ssh <hostname>
 ```
+
 Once in the virtual machine we are going to add docker, direnv, and our `Feed Bot` directory
 
 ```bash
@@ -119,6 +124,7 @@ $ vim compose.yaml # paste contents of compose-prod.yaml when ready to save do (
 ```
 
 Now lets run the bot in the background and see what it is doing.
+
 ```bash
 # ~/feed_bot
 $ docker compose up -d
@@ -131,26 +137,38 @@ Now re-read the [create a bot account](https://discordpy.readthedocs.io/en/stabl
 
 ### Commands
 
+**File Commands: Commands for exporting channel subscriptions**
+
+- Permissions: Channel members can export a channel's subscriptions
+
+![Image of Export Command In Action](/assets/images/export-command-ex.png)
+
+| Command   | Description                                                                   |
+| --------- | ----------------------------------------------------------------------------- |
+| `.export` | Sends a generated .txt file of all the channel's subscriptions to the channel |
+
 **Reddit Commands: RSS like updates for subreddits within channels**
+
 - Permissions: Only a guild owner can invoke these commands.
 
 ![Image of Reddit Feeds In Action](assets/images/reddit-rss-screenshot.png)
 
-| Command  | Description  |  Example  |
-|----------|--------------|-----------|
-| `.subreddit ls` | List the subreddits this channel subscribes to. | `.subreddit ls` |
-| `.subreddit add <arg>` | Add subreddit(s) as an rss feed for this channel. | `.subreddit add cyberDeck,r/ROS` or `.subreddit add r/linux`|
-| `.subreddit rm <arg>` | Remove rss feed of subreddit(s) from this channel | `.subreddit rm r/cyberDeck` or `.subreddit rm r/ROS,r/linux` |
-| `.subreddit prune` | Removes all subreddit rss feeds within a given channel | `.subreddit prune` |
+| Command                | Description                                            | Example                                                      |
+| ---------------------- | ------------------------------------------------------ | ------------------------------------------------------------ |
+| `.subreddit ls`        | List the subreddits this channel subscribes to.        | `.subreddit ls`                                              |
+| `.subreddit add <arg>` | Add subreddit(s) as an rss feed for this channel.      | `.subreddit add cyberDeck,r/ROS` or `.subreddit add r/linux` |
+| `.subreddit rm <arg>`  | Remove rss feed of subreddit(s) from this channel      | `.subreddit rm r/cyberDeck` or `.subreddit rm r/ROS,r/linux` |
+| `.subreddit prune`     | Removes all subreddit rss feeds within a given channel | `.subreddit prune`                                           |
 
 **RSS Feed Commands: RSS feed updates within your guild channels**
+
 - Permissions: Only a guild owner can invoke these commands.
 
 ![Image of RSS Add Feeds Command In Actions](assets/images/rss-add-command.png)
 
-| Command | Description | Example |
-|---------|-------------|---------|
-| `.rss ls` | List the RSS Feeds that this channel subscribes to. | `.rss ls` |
-| `.rss add <arg>` | Adds website rss feeds to the channel. | `.rss add https://corbettreport.com/feed` or `.rss add https://unlimitedhangout.com/feed/,https://corbettreport.com/feed/` *trailing slash optional|
-| `.rss rm <arg>` | Removes specific rss feeds from channel. | `.rss rm https://corbettreport.com/feed` or `.rss rm https://unlimitedhangout.com/feed/,https://corbettreport.com/feed/` *trailing slash optional |
-| `.rss prune` | Removes all web rss feeds within a given channel. | `.rss prune` |
+| Command          | Description                                         | Example                                                                                                                                              |
+| ---------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `.rss ls`        | List the RSS Feeds that this channel subscribes to. | `.rss ls`                                                                                                                                            |
+| `.rss add <arg>` | Adds website rss feeds to the channel.              | `.rss add https://corbettreport.com/feed` or `.rss add https://unlimitedhangout.com/feed/,https://corbettreport.com/feed/` \*trailing slash optional |
+| `.rss rm <arg>`  | Removes specific rss feeds from channel.            | `.rss rm https://corbettreport.com/feed` or `.rss rm https://unlimitedhangout.com/feed/,https://corbettreport.com/feed/` \*trailing slash optional   |
+| `.rss prune`     | Removes all web rss feeds within a given channel.   | `.rss prune`                                                                                                                                         |
