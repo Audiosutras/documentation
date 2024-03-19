@@ -5,6 +5,8 @@ description: A discord bot for emulating an rss feed reader within your guild ch
 
 # Feed Bot
 
+![Feed Bot Image](https://d2ixboot0418ao.cloudfront.net/feed_bot.jpg)
+
 A discord bot for emulating an rss feed reader within your guild channels.
 
 [Source Code](https://github.com/Audiosutras/feed_bot) - [Full Documentation](https://github.com/Audiosutras/feed_bot/blob/main/README.md) - [MIT License](https://github.com/Audiosutras/feed_bot/blob/main/MIT-LICENSE.txt) - [Issues](https://github.com/Audiosutras/feed_bot/issues) - [Releases](https://github.com/Audiosutras/feed_bot/releases) - [Docker Container Images](https://github.com/Audiosutras/feed_bot/pkgs/container/feed_bot)
