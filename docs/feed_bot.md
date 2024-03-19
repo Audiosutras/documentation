@@ -11,9 +11,8 @@ A discord bot for emulating an rss feed reader within your guild channels.
 
 [Source Code](https://github.com/Audiosutras/feed_bot) - [Full Documentation](https://github.com/Audiosutras/feed_bot/blob/main/README.md) - [MIT License](https://github.com/Audiosutras/feed_bot/blob/main/MIT-LICENSE.txt) - [Issues](https://github.com/Audiosutras/feed_bot/issues) - [Releases](https://github.com/Audiosutras/feed_bot/releases) - [Docker Container Images](https://github.com/Audiosutras/feed_bot/pkgs/container/feed_bot)
 
-**Note:** I am making this bot available under MIT license that includes giving you the right to use my bot for commercial use. I strongly encourage you to do donate to me at least $5 dollars if
-you have the means. I would like to be able to continue making open source software and this can be
-accomplished with community support. Please click the `Tip Me` button to support my work.
+**Note:** I am making this bot available under MIT license giving you the right to use my bot for commercial uses. I strongly encourage you to donate if
+you have the means. Please click the `Tip Me` button to support my work.
 
 ---
 
