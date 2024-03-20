@@ -65,6 +65,10 @@ A statically-typed curly-braces programming language designed for developing sma
 
 [Vim](https://devhints.io/vim) - `:help`
 
+### Command Line
+
+[tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) persists tmux environment across system restarts.
+
 ### Discord
 
 [Discord Developer Portal](https://discord.com/developers/applications)
