@@ -112,15 +112,14 @@ $ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Aurulent
 - Update [alacritty](#alacritty) to use the patched. Sticking with our example.
 
 ```yaml
-$ nvim ~/.config/alacritty/alacritty.yml
+$ nvim ~/.config/alacritty/alacritty.toml
 # Add the following to the config file
-font:
-  normal:
-    family: AurulentSansMNerdFontMono
-    style: Regular
+[font]
+normal = { family = "AurulentSansMNerdFontMono", style = "Regular" }
+size = 10.25
 ```
 
-[alacritty config cheatsheet](https://sunnnychan.github.io/cheatsheet/linux/config/alacritty.yml.html)
+[alacritty config docs](https://alacritty.org/config-alacritty.html)
 
 ## Recommended Additional Packages
 
