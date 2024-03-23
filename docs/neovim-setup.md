@@ -103,6 +103,8 @@ In order for icons to shows up with the nvim editor 9 out of 10 times you will n
 - Create or ensure `~/.local/share/fonts` directory exists on your file system
 - Copy the link address for the font you want to download from the `Download` button and the Command
 
+- [My Patched Fonts Repo](https://github.com/Audiosutras/Patched-Fonts)
+
 ```bash
 $ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/AurulentSansMono.zip ~/.local/share/fonts/
 ```
@@ -119,7 +121,8 @@ normal = { family = "AurulentSansMNerdFontMono", style = "Regular" }
 size = 10.25
 ```
 
-[alacritty config docs](https://alacritty.org/config-alacritty.html)
+- [alacritty config docs](https://alacritty.org/config-alacritty.html)
+- [my alacritty configuration](https://github.com/Audiosutras/My-Alacritty-Toml-Config)
 
 ## Recommended Additional Packages
 
