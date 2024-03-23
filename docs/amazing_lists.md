@@ -147,6 +147,8 @@ Fast, disk space efficient package manager
 
 ### Pentesting tools
 
+[Flipper Zero](https://flipperzero.one/) s a portable multi-tool for pentesters and geeks in a toy-like body. It loves hacking digital stuff, such as radio protocols, access control systems, hardware, and more. It's fully open-source and customizable, so you can extend it in whatever way you like. - [Docs](https://docs.flipper.net/)
+
 [Hak5](https://shop.hak5.org/) is industry leading hacker tools & award winning hacking shows for red teams, pentesters, cyber security students and IT professionals.
 
 [Kali Linux](https://www.kali.org/) is a Linux distribution designed for digital forensics and penetration testing.
