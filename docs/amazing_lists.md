@@ -192,6 +192,8 @@ Celery is a simple, flexible, and reliable distributed system to process vast am
 [Requests](https://requests.readthedocs.io/en/latest/)
 Requests is an elegant and simple HTTP library for Python, built for human beings.
 
+[Mongoengine](https://github.com/mongoengine) is a Document-Object Mapper for working with MongoDB from Python
+
 [Motor](https://motor.readthedocs.io/en/stable/index.html) Asynchronous Python driver for [MongoDB](https://www.mongodb.com/docs/manual/)
 
 [Poetry](https://python-poetry.org/)
@@ -200,7 +202,11 @@ Python packaging and dependency management made easy
 [PIPX](https://pypa.github.io/pipx/)
 Install and Run Python Applications in Isolated Environments
 
+[Asyncpg](https://magicstack.github.io/asyncpg/current/) is a database interface library designed specifically for PostgreSQL and Python/asyncio.
+
 [Psycopg 3](https://www.psycopg.org/psycopg3/docs/basic/index.html) Psycopg 3 is a modern implementation of a PostgreSQL adapter for Python.
+
+[PyMongo](https://pymongo.readthedocs.io/en/4.6.0/index.html) is a Python distribution containing tools for working with MongoDB (Synchronous)
 
 [Python Dotenv](https://github.com/theskumar/python-dotenv) Python-dotenv reads key-value pairs from a `.env` file and can set them as environment variables. It helps in the development of applications
 
