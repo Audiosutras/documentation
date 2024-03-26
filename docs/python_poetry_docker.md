@@ -52,7 +52,7 @@ services:
     restart: always
     environment: # see .env_file if you rather specify a file instead of env vars individually
       # Add environment variables here
-      - MONGODB_URI=mongodb://<MONGO_INITDB_ROOT_USERNAME>:<MONGO_INITDB_ROOT_PASSWORD>@mongo:27017/
+      - MONGODB_URI=mongodb://root:<MONGO_INITDB_ROOT_PASSWORD>@mongo:27017/
     depends_on:
       - mongo
   # example of including a database service
@@ -61,7 +61,7 @@ services:
     restart: always
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=feed_bot
+      - MONGO_INITDB_ROOT_PASSWORD=<password>
     volumes:
       - mongodata:/data/db
 volumes:
@@ -134,7 +134,7 @@ services:
     command: sh -c "poetry install --no-interaction --only=main,tests && <start command for project>"
     restart: always
     environment:
-      - MONGODB_URI=mongodb://<MONGO_INITDB_ROOT_USERNAME>:<MONGO_INITDB_ROOT_PASSWORD>@mongo:27017/
+      - MONGODB_URI=mongodb://root:<MONGO_INITDB_ROOT_PASSWORD>@mongo:27017/
     depends_on:
       - mongo
   # example db service. In this case mongodb
@@ -143,7 +143,7 @@ services:
     restart: always
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=feed_bot
+      - MONGO_INITDB_ROOT_PASSWORD=<password>
     volumes:
       - mongodata:/data/db
 volumes:
