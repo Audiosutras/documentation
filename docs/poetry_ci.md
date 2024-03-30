@@ -1,6 +1,7 @@
 ---
 category: Continuous Integration
 ---
+
 # Python - Poetry CI Github Action
 
 The below instructions assume that you are already using poetry and have `pyproject.toml`.
@@ -40,20 +41,19 @@ jobs:
           pipx install poetry
 
       - name: Install Dependencies & Test Dependencies
-        run: poetry install
+        run: poetry install --no-interaction --only=main,dev,tests
 
       - name: Style Guide Check & Code Check
         run: poetry run pre-commit run -a
 
-      - name: Run Pytest
-        run: poetry run pytest -v
-
+      - name: Run Pytest & Code Coverage
+        run: poetry run pytest --cov-config=.coveragerc --cov=. tests/
 ```
 
 - Assumes [pytest](https://docs.pytest.org/en/7.4.x/) and [precommit](https://pre-commit.com/) has been installed by [poetry](https://python-poetry.org/)
 
 ```bash
--> poetry add pytest pytest-mock --group test
+-> poetry add pytest pytest-mock pytest-cov --group tests
 -> poetry add pre-commit --group dev
 ```
 
@@ -63,25 +63,40 @@ Starter `.pre-commit-config.yaml` file. Place in root directory of project
 
 ```yaml
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.3.0
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
     hooks:
-    -   id: check-yaml
-    -   id: end-of-file-fixer
-    -   id: trailing-whitespace
--   repo: https://github.com/psf/black
-    rev: 22.10.0
+      - id: check-yaml
+      - id: check-docstring-first
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: https://github.com/psf/black
+    rev: 24.3.0
     hooks:
-    -   id: black
--   repo: https://github.com/python-poetry/poetry
-    rev: 1.7.0 # add poetry version here
+      - id: black
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
     hooks:
-    -   id: poetry-check
-    -   id: poetry-lock
-    -   id: poetry-install
+      - id: isort
+  - repo: https://github.com/python-poetry/poetry
+    rev: 1.8.2 # add poetry version here
+    hooks:
+      - id: poetry-check
+      - id: poetry-lock
+      - id: poetry-install
 ```
 
-After adding this file locally initialize pre-commit and push to remote repo
+Starter `.coveragerc` file. Place in root directory of project
+
+```.coveragerc
+[run]
+omit = tests/*
+
+[report]
+fail_under = 90
+```
+
+After adding these files locally initialize pre-commit and push to remote repo
 
 ```bash
 -> pre-commit install
