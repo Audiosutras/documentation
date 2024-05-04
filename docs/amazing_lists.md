@@ -118,6 +118,10 @@ Your new, lightweight, JavaScript framework.
 [PNpM](https://pnpm.io/)
 Fast, disk space efficient package manager
 
+### Gitlab
+
+- [Self Hosting Docs](https://about.gitlab.com/install/)
+
 ### Google
 
 [Clasp](https://github.com/google/clasp) -
