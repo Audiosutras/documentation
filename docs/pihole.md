@@ -13,7 +13,7 @@ category: Hosting
   - [Docker & Docker Compose](#docker--docker-compose)
   - [Direnv](#direnv)
 - [Running PiHole & Unbound (Linux / Mac OS)](#running-pihole--unbound-linuxmac-os)
-  - [Ubuntu Additional Steps](#ubuntu-additional-steps)
+  - [Linux Additional Steps](#linux-additional-steps)
 - [More Useful Resources & Articles](#more-useful-resources--articles)
   - [Resources](#resources)
   - [Articles](#articles)
@@ -175,7 +175,7 @@ $ source ~/.zshrc
 
    For more Information see the article linked above for step 5.
 
-### Ubuntu Additional Steps
+### Linux Additional Steps
 
 In order to proceed you will need to update `systemd-resolved` or disable it.
 
@@ -183,7 +183,15 @@ In order to proceed you will need to update `systemd-resolved` or disable it.
 
 - [The Unoffical Solution for the Streets - Disable It](https://askubuntu.com/questions/907246/how-to-disable-systemd-resolved-in-ubuntu).
 
-Here are the steps for the unoffical solution
+Here are the steps for the official solution
+
+```bash
+-> sudo sed -r -i.orig 's/#?DNSStubListener=yes/DNSStubListener=no/g' /etc/systemd/resolved.conf
+-> sudo sh -c 'rm /etc/resolv.conf && ln -s /run/systemd/resolve/resolv.conf 
+-> sudo systemctl restart systemd-resolved
+```
+
+Here are the steps for the unofficial solution
 
 ```bash
     # The Unoffical Solution for the Streets
