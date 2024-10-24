@@ -1,6 +1,3 @@
----
-category: Continuous Deployment
----
 # Github Actions for Releasing Python Packages to PYPI
 
 Add `pre-release.yml` to `.github/workflows`. This workflow is triggered on tag creation and publishes to `tests.pypi`:
@@ -11,7 +8,7 @@ on:
   push:
     # when a new tag has been pushed to repo
     tags:
-      - '*.*.*'
+      - "*.*.*"
 
 jobs:
   package_pre_release:
@@ -77,13 +74,12 @@ jobs:
 
       - name: Publish package
         run: poetry publish --build
-
 ```
 
 - Github Secret Used: `PYPI_PASSWORD` - API token generated on pypi.org
 
 Update repo's `ReadMe.md` with procedure for running a deployment:
-    
+
     1. In `pyproject.toml` *bump* the version number `*.*.*`
 
     2. Create a [git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging) with the new version number `*.*.*` you specified in `pyproject.toml`.
@@ -100,6 +96,3 @@ Update repo's `ReadMe.md` with procedure for running a deployment:
     ```bash
     -> pipx install <pyproject package name>
     ```
-
-
-

@@ -1,7 +1,3 @@
----
-category: Command Line
----
-
 # Neovim IDE Setup
 
 [Neovim](https://neovim.io/) is a hyper-extensible [Vim](https://www.vim.org/)-based text editor. Through additional configuration provided by plugins and a window manager like [tmux](https://github.com/tmux/tmux/wiki) we can create a powerful Integrated Development Environment (IDE) comparable to [VS Codium](https://vscodium.com/).
@@ -27,25 +23,25 @@ Installation methods for your particular operating system can be found [here](ht
 For Debian
 
 ```bash
-$ sudo apt-get install neovim python3-neovim
+sudo apt-get install neovim python3-neovim
 ```
 
 For Ubuntu
 
 ```bash
-$ sudo apt install neovim python3-neovim
+sudo apt install neovim python3-neovim
 ```
 
 For Fedora
 
 ```bash
-$ sudo dnf install -y neovim python3-neovim
+sudo dnf install -y neovim python3-neovim
 ```
 
 For Arch Linux
 
 ```bash
-$ sudo pacman -S neovim
+sudo pacman -S neovim
 ```
 
 ### Configuration
@@ -69,25 +65,25 @@ Clone the starter or copy my config
 **starter** if you would like to configure lazy.vim yourself and follow the docs
 
 ```bash
-$ git clone https://github.com/LazyVim/starter ~/.config/nvim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
 ```
 
 Use my config
 
 ```bash
-$ git clone https://github.com/Audiosutras/nvim.git ~/.config/nvim
+git clone https://github.com/Audiosutras/nvim.git ~/.config/nvim
 ```
 
 Remove the `.git` folder, so you can add it to your own repo later
 
 ```bash
-$ rm -rf ~/.config/nvim/.git
+rm -rf ~/.config/nvim/.git
 ```
 
 Start Neovim
 
 ```bash
-$ nvim
+nvim
 ```
 
 You can enable/disable plugins with `:LazyExtras` and using `x` to select plugins from the menu. Press `:q` to exit. Make sure to familiarize yourself with standard vim commands using `:help`. You learn more about plugins in use by seeing what plugins are enabling and navigating to there git repositories.
@@ -106,7 +102,7 @@ In order for icons to shows up with the nvim editor 9 out of 10 times you will n
 - [My Patched Fonts Repo](https://github.com/Audiosutras/Patched-Fonts)
 
 ```bash
-$ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/AurulentSansMono.zip ~/.local/share/fonts/
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/AurulentSansMono.zip ~/.local/share/fonts/
 ```
 
 - `unzip` the file and check the file extension. The file extension could end in `otf` or `ttf`. Create a directory within fonts that matches the file extension(s). Move the unzipped files into the corresponding file extension directory within the fonts directory.

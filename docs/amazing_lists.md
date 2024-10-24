@@ -1,7 +1,3 @@
----
-category: Miscellaneous
----
-
 # Amazing Lists for Machine Users
 
 A collection of managed lists on github and some of my own for progamming and operating system quality of life.

@@ -1,8 +1,3 @@
----
-category: Discord Bots
-description: A discord bot for emulating an rss feed reader within your guild channels.
----
-
 # Feed Bot
 
 ![Feed Bot Image](https://d2ixboot0418ao.cloudfront.net/feed_bot.jpg)
@@ -95,16 +90,16 @@ Whether hosting on Digital Ocean, another provider, or your local machine make s
 Run:
 
 ```bash
-$ doctl compute ssh <hostname>
+doctl compute ssh <hostname>
 ```
 
 Once in the virtual machine we are going to add docker, direnv, and our `Feed Bot` directory
 
 ```bash
-$ snap install docker
-$ apt install direnv
-$ echo 'eval "$(direnv hook bash)"' >> .bashrc
-$ mkdir feed_bot && cd feed_bot
+snap install docker
+apt install direnv
+echo 'eval "$(direnv hook bash)"' >> .bashrc
+mkdir feed_bot && cd feed_bot
 ```
 
 Head to the [environment variables](#environment-variables) section and add the env vars.

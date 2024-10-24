@@ -1,7 +1,3 @@
----
-category: Docker
----
-
 # Python Poetry Docker Examples
 
 ## Production

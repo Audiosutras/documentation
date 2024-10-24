@@ -1,7 +1,3 @@
----
-category: Hosting
----
-
 # Pi-hole & Unbound Setup Using Docker Compose
 
 ## Article Sections
@@ -74,13 +70,13 @@ You can export the environment variables we'll discuss but [direnv](https://dire
 For ubuntu-based systems:
 
 ```bash
-$ apt install direnv
+apt install direnv
 ```
 
 Via homebrew:
 
 ```bash
-$ brew install direnv
+brew install direnv
 ```
 
 You may need to re-open your terminal shell here. Now let's configure our shell.
@@ -88,15 +84,15 @@ You may need to re-open your terminal shell here. Now let's configure our shell.
 For bash:
 
 ```bash
-$ echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
-$ source ~/.bashrc
+echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 For zsh:
 
 ```bash
-$ echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
-$ source ~/.zshrc
+echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
+source ~/.zshrc
 ```
 
 ## Running PiHole & Unbound (Linux/Mac OS)
@@ -129,7 +125,7 @@ $ source ~/.zshrc
    Now allow `direnv` to automatically export environment variables by running:
 
    ```bash
-   $ direnv allow .
+   direnv allow .
    ```
 
    Each time changes are made to the `.envrc` file this command will need to be run.
@@ -187,7 +183,7 @@ Here are the steps for the official solution
 
 ```bash
 -> sudo sed -r -i.orig 's/#?DNSStubListener=yes/DNSStubListener=no/g' /etc/systemd/resolved.conf
--> sudo sh -c 'rm /etc/resolv.conf && ln -s /run/systemd/resolve/resolv.conf' 
+-> sudo sh -c 'rm /etc/resolv.conf && ln -s /run/systemd/resolve/resolv.conf'
 -> sudo systemctl restart systemd-resolved
 ```
 

@@ -1,40 +1,46 @@
----
-category: Hosting
----
 # Hosting Documentation Using Github Pages & Jekyll
+
 The github repo for [docs.chrisdixononcode.dev](https://github.com/Audiosutras/documentation) and [getdat](https://github.com/Audiosutras/getdat) are good examples to follow alongside this documentation if needed. `getdat` demonstrates hosting documentation for a python package.
 
 ### Table of Contents
+
 - [Initial Local Setup](#initial-local-setup)
 - [Repository Setup](#repository-setup)
-    - [Jekyll Config](#jekyll-config)
-    - [Gemfile](#gemfile)
-    - [Customizing Styling & HTML](#customizing-styling--html)
+  - [Jekyll Config](#jekyll-config)
+  - [Gemfile](#gemfile)
+  - [Customizing Styling & HTML](#customizing-styling--html)
 - [Using a Sub-Domain For Your Github Pages Site](#using-a-sub-domain-for-your-github-pages-site)
-    - [Update the Domain Name Registrar](#update-the-domain-name-registrar)
-    - [Update the Repository and Github](#update-the-repository-and-github)
+  - [Update the Domain Name Registrar](#update-the-domain-name-registrar)
+  - [Update the Repository and Github](#update-the-repository-and-github)
 
 ## Initial Local Setup
+
 Locally on your machine follow the [installation guide](https://jekyllrb.com/docs/installation/#guides) for your operating system to get jekyll installed so we can customize and make changes to the site before pushing to production. I'm currently on linux mint so I will follow the installation guide for Ubuntu.
 
 - Install Ruby and othe prerequisites:
+
   ```bash
   sudo apt update
   sudo apt install ruby-full build-essential zlib1g-dev
   ```
+
 - Configure Path to Gems. I use zsh so will be updating `.zshrc`. If using bash replace `~/.zshrc` with `~/.bashrc`:
+
   ```bash
   echo '# Install Ruby Gems to ~/gems' >> ~/.zshrc
   echo 'export GEM_HOME="$HOME/gems"' >> ~/.zshrc
   echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.zshrc
   source ~/.zshrc
   ```
+
 - Install Jekyll and Bundler
+
   ```bash
   gem install jekyll bundler
   ```
 
 ## Repository Setup
+
 For an existing or newly created github repository head to `Settings` and under `Code and automation` click on `Pages`.
 
 ![Screenshot of Pages button on Settings Pages in Github](assets/images/gh-settings-pages.png)
@@ -99,17 +105,21 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-
 ```
+
 Before committing this file lets:
+
 - update `.gitignore` to exclude the `_site/` directory
+
   ```.gitignore
   /docs/_site/
   _site/
 
   # other contents
   ```
+
 - Add files and directories for configuration and customization. Below is the layout for `docs/`
+
 ```txt
 | docs
     | ReadMe.md (entry point to site: '/')
@@ -127,7 +137,9 @@ Before committing this file lets:
 ```
 
 ### Jekyll Config
+
 Add the following contents to `_config.yml`. This example `_config.yml` file uses `pages-themes/hacker`. You can choose a different theme [here](https://github.com/pages-themes). Note that [show_downloads](https://github.com/pages-themes/hacker/blob/4c942506cf8d5329a9cbc66b1eff75ad86a49e34/_layouts/default.html#L22-L26) and [google_analytics](https://github.com/pages-themes/hacker/blob/master/_includes/head-custom-google-analytics.html) are optional and be overwritten which we will get to shortly.
+
 ```yaml
 lsi: false
 safe: true
@@ -147,11 +159,13 @@ kramdown:
 # make sure to select a theme if you don't want to go with hacker.
 remote_theme: pages-themes/hacker@v0.2.0 # https://github.com/pages-themes/hacker
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
 ```
 
 ### Gemfile
+
 The `Gemfile` is important for local development. Add the following:
+
 ```Gemfile
 source "https://rubygems.org/"
 
@@ -169,12 +183,12 @@ bundler exec jekyll build
 bundler exec jekyll serve
 ```
 
-*Note - at this point you can commit and push changes and check that your documentation is hosted at `https://<github_username>.github.io/<repository_name>` after confirming that local development is working properly*
-
+_Note - at this point you can commit and push changes and check that your documentation is hosted at `https://<github_username>.github.io/<repository_name>` after confirming that local development is working properly_
 
 ### Customizing Styling & HTML
 
 For adding your own styles create a `styles.scss` file in `docs/assets/css/`. For changes to take effect with your custom styles you may need to add `!important` at the end of a property's value.
+
 ```scss
 ---
 ---
@@ -183,31 +197,36 @@ For adding your own styles create a `styles.scss` file in `docs/assets/css/`. Fo
 
 /* Your custom styles */
 ```
+
 For adding HTML you will need to override `_layouts` and `_includes` directories with a replacement file for what you want to edit. Its best to check the documentation and source code for the theme that has been selected. For example with hacker I've consulted this [section](https://github.com/pages-themes/hacker#customizing) for building this [site](https://github.com/Audiosutras/documentation)
 
 This is important if you would like to add a custom navigation, footer, favicon, or use a css framework to style your documentation inline with an existing site. For example if you click on [Home](https://chrisdixononcode.dev) and navigate back to this documentation page you will see that you have changed domains to `https://chrisdixoncode.dev` to `https://docs.chrisdixononcode.dev` and back again.
 
-
 ## Using a Sub-Domain for Your Github Pages Site
 
 ### Update the Domain Name Registrar
+
 Head over to the DNS registar where you purchased the domain you would like to sub-domain. Add a CNAME record to that domain's DNS records for it be used as your github pages new domain. For example, `chrisdixononcode.dev` is the domain. To create `docs.chrisdixononcode.dev` subdomain for `<github_username>.github.io` you add the following:
+
 ```txt
 RECORD TYPE: CNAME
 NAME: docs
 VALUE: <github_username>.github.io
 TIME TO LIVE (TTL): 3600
 ```
-*Note - you can follow this format as much as you would like for repositories hosted with github pages. Just change the `NAME` value that determines the actually subdomain*
+
+_Note - you can follow this format as much as you would like for repositories hosted with github pages. Just change the `NAME` value that determines the actually subdomain_
 
 ### Update the Repository and Github
-In the repository you would like to have a custom domain for add a file in your `docs/` directory called `CNAME`. Within this file write the *full* custom domain and then commit and push this file to the repository. For example:
+
+In the repository you would like to have a custom domain for add a file in your `docs/` directory called `CNAME`. Within this file write the _full_ custom domain and then commit and push this file to the repository. For example:
+
 ```txt
 # first line of CNAME file
 docs.chrisdixononcode.dev
 
 ```
+
 From the Github GUI navigate to `Settings`. Under `Code and automation` click `Pages` and then under `Custom domain` add your subdomain and click `Save`. Underneath make sure `Enfore HTTPS` is checked.
 
 ![Where to setup a custom domain in Github GUI](assets/images/gh-custom-domains.png)
-

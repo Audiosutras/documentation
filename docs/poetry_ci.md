@@ -1,7 +1,3 @@
----
-category: Continuous Integration
----
-
 # Python - Poetry CI Github Action
 
 The below instructions assume that you are already using poetry and have `pyproject.toml`.
