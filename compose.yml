@@ -1,0 +1,11 @@
+services:
+  docs:
+    build:
+      context: .
+      args:
+        POETRY_VERSION: 1.8.4
+    command: sh -c "mkdocs serve -a 0.0.0.0:8000"
+    volumes:
+      - .:/code
+    ports:
+      - "9000:8000"

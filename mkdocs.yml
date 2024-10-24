@@ -1,0 +1,33 @@
+site_name: Yea Its Documentation
+site_description: The documentation site for my documentation.
+site_author: Christopher Dixon
+copyright: GNU GPL v3 License
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/git-alt
+  features:
+    - content.code.copy
+    - search.suggest
+    - search.share
+  language: en
+  palette:
+    scheme: slate
+    primary: green
+    accent: light green
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+plugins:
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/
+  - search
