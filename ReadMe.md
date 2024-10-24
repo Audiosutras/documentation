@@ -1,7 +1,10 @@
 # Local Development
 
+# Deployment
+
+````bash
+poetry shell
+mkdocs gh-deploy
 ```bash
--> bundler install # may or may not be needed
--> bundler exec jekyll build
--> bundler exec jekyll server
-```
+````
+
