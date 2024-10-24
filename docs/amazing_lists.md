@@ -6,6 +6,15 @@ A collection of managed lists on github and some of my own for progamming and op
 
 ## Github Managed Lists
 
+[Awesome Algorithms](https://github.com/tayllan/awesome-algorithms)
+A curated list of awesome places to learn and/or practice algorithms
+
+[All About RSS](https://github.com/AboutRSS/ALL-about-RSS)
+A list of RSS related stuff: tools, services, communities and tutorials, etc.
+
+[Alternative Frontends](https://github.com/mendel5/alternative-front-ends)
+Overview of alternative open source front-ends for popular internet platforms (e.g. Youtube, Twitter, etc.)
+
 [Awesome](https://github.com/sindresorhus/awesome)
 😎 Awesome lists about all kinds of interesting topics
 
@@ -20,6 +29,9 @@ A curated list of awesome actions to use on GitHub
 [Awesome Hacking](https://github.com/Hack-with-Github/Awesome-Hacking)
 A collection of various awesome lists for hackers, pentesters and security researcher
 
+[Awesome Icons](https://github.com/vkarampinis/awesome-icons)
+A curate list of awesome Web Font Icons
+
 [Awesome (Gem-Packaged) Jekyll Plugins](https://github.com/planetjekyll/awesome-jekyll-plugins)
 A collection of awesome Jekyll plugins adding converters, generators, filters & tags, importers, new commands & switches, and more.
 
@@ -28,6 +40,9 @@ Neovim is a Vim-based text editor engineered for extensibility and usability, to
 
 [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
 This is a list of topic-centric public data sources in high quality. They are collected and tidied from blogs, answers, and user responses. Most of the data sets listed below are free, however, some are not. This project was incubated at OMNILab, Shanghai Jiao Tong University during Xiaming Chen's Ph.D. studies. OMNILab is now part of the BaiYuLan Open AI community.
+
+[Awesome Python Typing](https://github.com/typeddjango/awesome-python-typing)
+Collection of awesome Python types, stubs, plugins, and tools to work with them
 
 [Awesome Self-Hosted](https://github.com/awesome-selfhosted/awesome-selfhosted)
 A list of Free Software network services and web applications which can be hosted on your own servers
@@ -38,13 +53,14 @@ A curated list of amazingly awesome open-source sysadmin resources.
 [Awesome Zsh Plugins](https://github.com/unixorn/awesome-zsh-plugins)
 A collection of ZSH frameworks, plugins, themes and tutorials.
 
+[Free Media Heck Yeah (FMHY)](https://github.com/fmhy/edit)
+The largest collection of free stuff on the internet
+
 [Open Source MacOS Apps](https://github.com/serhii-londar/open-source-mac-os-apps)
 🚀 Awesome list of open source applications for macOS.
 
 [The Book of Secret Knowledge](https://github.com/trimstray/the-book-of-secret-knowledge)
 A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.
-
----
 
 ## Self-managed List
 

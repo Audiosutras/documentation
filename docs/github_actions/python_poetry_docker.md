@@ -5,9 +5,9 @@
 Example `Dockerfile`
 
 ```Dockerfile
-FROM python:3.12-alpine
+FROM python:3.13-alpine
 
-ARG POETRY_VERSION=1.7.1
+ARG POETRY_VERSION=1.8.4
 
 ENV PYTHONFAULTHANDLER=1
 ENV PYTHONUNBUFFERED=1
@@ -36,8 +36,6 @@ See [Github Action to Deploy Dockerfile to Remote Registry](/docs/docker_cd_gith
 Example `compose.yaml` file.
 
 ```yaml
-version: "3.8"
-
 services:
   bot:
     # since this is production pull the latest image from ghcr.io or another remote registry
@@ -75,9 +73,9 @@ docker compose up -d
 Example `Dockerfile-dev`
 
 ```
-FROM python:3.12-alpine
+FROM python:3.13-alpine
 
-ARG POETRY_VERSION=1.7.1
+ARG POETRY_VERSION=1.8.4
 
 ENV PYTHONFAULTHANDLER=1
 ENV PYTHONUNBUFFERED=1
@@ -110,8 +108,6 @@ COPY --chown=code:code . /code
 Example docker compose file. This file could be `compose.yaml` and your production compose file could be `compose-prod.yaml` or some variation of this to distinguish between the files. Its up to you.
 
 ```yaml
-version: "3.8"
-
 services:
   bot:
     build:
