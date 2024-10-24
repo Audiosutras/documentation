@@ -1,0 +1,1116 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The documentation site for my documentation.">
+      
+      
+        <meta name="author" content="Christopher Dixon">
+      
+      
+      
+        <link rel="prev" href="../gs_classes/">
+      
+      
+        <link rel="next" href="../linux_mint_audio_issues/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>Hosting Documentation Using Github Pages & Jekyll - Yea Its Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hosting-documentation-using-github-pages-jekyll" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Yea Its Documentation" class="md-header__button md-logo" aria-label="Yea Its Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Yea Its Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Hosting Documentation Using Github Pages &amp; Jekyll
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Yea Its Documentation" class="md-nav__button md-logo" aria-label="Yea Its Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Yea Its Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yea its Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../amazing_lists/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Amazing Lists for Machine Users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_versioning_and_rollbacks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code Versioning &amp; Rolling Back Main Branch To A Prior State
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contentful_draft_mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enabling Draft Previews for Contentful Development &amp; Staging Environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker_cd_github_action/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Github Action to Deploy Dockerfile to Remote Registry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extract_tar_files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extracting Tar.gz Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gs_classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Classes for Google AppScript
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Hosting Documentation Using Github Pages &amp; Jekyll
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Hosting Documentation Using Github Pages &amp; Jekyll
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initial-local-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initial Local Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repository-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repository Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Repository Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jekyll-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jekyll Config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gemfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gemfile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customizing-styling-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing Styling &amp; HTML
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-a-sub-domain-for-your-github-pages-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using a Sub-Domain for Your Github Pages Site
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using a Sub-Domain for Your Github Pages Site">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-the-domain-name-registrar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update the Domain Name Registrar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-the-repository-and-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update the Repository and Github
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_mint_audio_issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [Solution] Linux Mint Audio Issues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_mint_nvidia_black_screen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [Solution] Linux Mint Black Screen After Login Using Nvidia Drivers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../neovim-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neovim IDE Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pihole/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pi-hole &amp; Unbound Setup Using Docker Compose
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../poetry_ci/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python - Poetry CI Github Action
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pypi_releases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Github Actions for Releasing Python Packages to PYPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_poetry_docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python Poetry Docker Examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rar_files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extracting Rar files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zap-full-scan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Perform Weekly Security Audits with ZAProxy &amp; Github Actions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_18" >
+        
+          
+          <label class="md-nav__link" for="__nav_18" id="__nav_18_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Encryption
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_18">
+            <span class="md-nav__icon md-icon"></span>
+            Encryption
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../encryption/usb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    USB Drive Encryption
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initial-local-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initial Local Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repository-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repository Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Repository Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jekyll-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jekyll Config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gemfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gemfile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customizing-styling-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing Styling &amp; HTML
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-a-sub-domain-for-your-github-pages-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using a Sub-Domain for Your Github Pages Site
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using a Sub-Domain for Your Github Pages Site">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-the-domain-name-registrar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update the Domain Name Registrar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-the-repository-and-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update the Repository and Github
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="hosting-documentation-using-github-pages-jekyll">Hosting Documentation Using Github Pages &amp; Jekyll</h1>
+<p>The github repo for <a href="https://github.com/Audiosutras/documentation">docs.chrisdixononcode.dev</a> and <a href="https://github.com/Audiosutras/getdat">getdat</a> are good examples to follow alongside this documentation if needed. <code>getdat</code> demonstrates hosting documentation for a python package.</p>
+<h3 id="table-of-contents">Table of Contents</h3>
+<ul>
+<li><a href="#initial-local-setup">Initial Local Setup</a></li>
+<li><a href="#repository-setup">Repository Setup</a></li>
+<li><a href="#jekyll-config">Jekyll Config</a></li>
+<li><a href="#gemfile">Gemfile</a></li>
+<li><a href="#customizing-styling--html">Customizing Styling &amp; HTML</a></li>
+<li><a href="#using-a-sub-domain-for-your-github-pages-site">Using a Sub-Domain For Your Github Pages Site</a></li>
+<li><a href="#update-the-domain-name-registrar">Update the Domain Name Registrar</a></li>
+<li><a href="#update-the-repository-and-github">Update the Repository and Github</a></li>
+</ul>
+<h2 id="initial-local-setup">Initial Local Setup</h2>
+<p>Locally on your machine follow the <a href="https://jekyllrb.com/docs/installation/#guides">installation guide</a> for your operating system to get jekyll installed so we can customize and make changes to the site before pushing to production. I'm currently on linux mint so I will follow the installation guide for Ubuntu.</p>
+<ul>
+<li>Install Ruby and othe prerequisites:</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ruby-full<span class="w"> </span>build-essential<span class="w"> </span>zlib1g-dev
+</span></code></pre></div>
+<ul>
+<li>Configure Path to Gems. I use zsh so will be updating <code>.zshrc</code>. If using bash replace <code>~/.zshrc</code> with <code>~/.bashrc</code>:</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;# Install Ruby Gems to ~/gems&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.zshrc
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export GEM_HOME=&quot;$HOME/gems&quot;&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.zshrc
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export PATH=&quot;$HOME/gems/bin:$PATH&quot;&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.zshrc
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">source</span><span class="w"> </span>~/.zshrc
+</span></code></pre></div>
+<ul>
+<li>Install Jekyll and Bundler</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>gem<span class="w"> </span>install<span class="w"> </span>jekyll<span class="w"> </span>bundler
+</span></code></pre></div>
+<h2 id="repository-setup">Repository Setup</h2>
+<p>For an existing or newly created github repository head to <code>Settings</code> and under <code>Code and automation</code> click on <code>Pages</code>.</p>
+<p><img alt="Screenshot of Pages button on Settings Pages in Github" src="assets/images/gh-settings-pages.png" /></p>
+<p>Ensure that <code>Github Actions</code> is your <code>Source</code> under <code>Build and deployment</code>. Scroll down to <code>Jekyll</code> and click <code>Configure</code>.</p>
+<p><img alt="Screenshot of Configuring Jekyll as Github Action" src="assets/images/gh-jekyll-configure.png" /></p>
+<p>Clicking <code>Configure</code> will open an editor in github for you to review the workflow for this github action. Click <code>Commit Changes</code>, the action will be created and added to<code>.github/workflows/&lt;something with jekyll in the title&gt;.yml</code>.</p>
+<p>Pull down these changes to your local branch. Replace the contents of this file with the following to support our setup and tell github actions to build our jekyll site from the contents of the <code>docs/</code> directory.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a># Sample workflow for building and deploying a Jekyll site to GitHub Pages
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>on:
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  # Runs on pushes targeting the default branch
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  push:
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    branches: [&quot;master&quot;] # update this if using &#39;main&#39;, &#39;trunk&#39;, &#39;development&#39;, etc.
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>  # Allows you to run this workflow manually from the Actions tab
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>  workflow_dispatch:
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a># Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>permissions:
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>  contents: read
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>  pages: write
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>  id-token: write
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a># Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a># However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>concurrency:
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>  group: &quot;pages&quot;
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>  cancel-in-progress: false
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>jobs:
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>  # Build job
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>  build:
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>    runs-on: ubuntu-latest
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>    steps:
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>      - name: Checkout
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>        uses: actions/checkout@v3
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>      - name: Setup Pages
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>        uses: actions/configure-pages@v3
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>      - name: Build with Jekyll
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>        uses: actions/jekyll-build-pages@v1
+</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>        with:
+</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>          source: ./docs # IMPORTANT Build our site from the contents of the docs directory in the root repository.
+</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>          destination: ./_site
+</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>      - name: Upload artifact
+</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>        uses: actions/upload-pages-artifact@v2
+</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>
+</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>  # Deployment job
+</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>  deploy:
+</span><span id="__span-3-43"><a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>    environment:
+</span><span id="__span-3-44"><a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>      name: github-pages
+</span><span id="__span-3-45"><a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a>      url: -&gt;{{ steps.deployment.outputs.page_url }}
+</span><span id="__span-3-46"><a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a>    runs-on: ubuntu-latest
+</span><span id="__span-3-47"><a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a>    needs: build
+</span><span id="__span-3-48"><a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a>    steps:
+</span><span id="__span-3-49"><a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a>      - name: Deploy to GitHub Pages
+</span><span id="__span-3-50"><a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a>        id: deployment
+</span><span id="__span-3-51"><a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a>        uses: actions/deploy-pages@v2
+</span></code></pre></div>
+<p>Before committing this file lets:</p>
+<ul>
+<li>update <code>.gitignore</code> to exclude the <code>_site/</code> directory</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>/docs/_site/
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>_site/
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a># other contents
+</span></code></pre></div>
+<ul>
+<li>Add files and directories for configuration and customization. Below is the layout for <code>docs/</code></li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>| docs
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    | ReadMe.md (entry point to site: &#39;/&#39;)
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    | second_page.md (&#39;/second_page.html&#39;)
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    | other markdown files
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    | assets (optional: &#39;assets/&#39;)
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        | css (customization - optional)
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>            | style.scss (customization - optional)
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>        | images (optional)
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    | _includes (customization - optional)
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    | _layouts (customization - optional)
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>    | Gemfile (local development - optional)
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>    | Gemfile.lock (auto-generated - local development - optional)
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>    | _config.yml
+</span></code></pre></div>
+<h3 id="jekyll-config">Jekyll Config</h3>
+<p>Add the following contents to <code>_config.yml</code>. This example <code>_config.yml</code> file uses <code>pages-themes/hacker</code>. You can choose a different theme <a href="https://github.com/pages-themes">here</a>. Note that <a href="https://github.com/pages-themes/hacker/blob/4c942506cf8d5329a9cbc66b1eff75ad86a49e34/_layouts/default.html#L22-L26">show_downloads</a> and <a href="https://github.com/pages-themes/hacker/blob/master/_includes/head-custom-google-analytics.html">google_analytics</a> are optional and be overwritten which we will get to shortly.</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">lsi</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nt">safe</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;title&gt;</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;description of site&gt;</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c1"># optional</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nt">show_downloads</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c1"># optional</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="nt">google_analytics</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;google_analytics&gt;</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="nt">incremental</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="nt">highlighter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rouge</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="nt">gist</span><span class="p">:</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">  </span><span class="nt">noscript</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="nt">kramdown</span><span class="p">:</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">  </span><span class="nt">math_engine</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mathjax</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">  </span><span class="nt">syntax_highlighter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rouge</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="c1"># make sure to select a theme if you don&#39;t want to go with hacker.</span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="nt">remote_theme</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pages-themes/hacker@v0.2.0</span><span class="w"> </span><span class="c1"># https://github.com/pages-themes/hacker</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="nt">plugins</span><span class="p">:</span>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">jekyll-remote-theme</span><span class="w"> </span><span class="c1"># add this line to the plugins list if you already have one</span>
+</span></code></pre></div>
+<h3 id="gemfile">Gemfile</h3>
+<p>The <code>Gemfile</code> is important for local development. Add the following:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>source &quot;https://rubygems.org/&quot;
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>gem &#39;github-pages&#39;, group: :jekyll_plugins
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>gem &quot;webrick&quot;
+</span></code></pre></div>
+<p>After adding this file you should be able to start a local development server that runs at <code>https://127.0.0.1:4000</code>.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>bundler<span class="w"> </span>install
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="c1"># bundler install only needs to be run initially</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>bundler<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>jekyll<span class="w"> </span>build
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># remember to build pages once they have been added</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>bundler<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>jekyll<span class="w"> </span>serve
+</span></code></pre></div>
+<p><em>Note - at this point you can commit and push changes and check that your documentation is hosted at <code>https://&lt;github_username&gt;.github.io/&lt;repository_name&gt;</code> after confirming that local development is working properly</em></p>
+<h3 id="customizing-styling-html">Customizing Styling &amp; HTML</h3>
+<p>For adding your own styles create a <code>styles.scss</code> file in <code>docs/assets/css/</code>. For changes to take effect with your custom styles you may need to add <code>!important</code> at the end of a property's value.</p>
+<div class="language-scss highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nt">---</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nt">---</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="o">@</span><span class="nt">import</span><span class="w"> </span><span class="s2">&quot;{%raw%}{{ site.theme }}{%endraw%}&quot;</span><span class="o">;</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="o">/*</span><span class="w"> </span><span class="nt">Your</span><span class="w"> </span><span class="nt">custom</span><span class="w"> </span><span class="nt">styles</span><span class="w"> </span><span class="o">*/</span>
+</span></code></pre></div>
+<p>For adding HTML you will need to override <code>_layouts</code> and <code>_includes</code> directories with a replacement file for what you want to edit. Its best to check the documentation and source code for the theme that has been selected. For example with hacker I've consulted this <a href="https://github.com/pages-themes/hacker#customizing">section</a> for building this <a href="https://github.com/Audiosutras/documentation">site</a></p>
+<p>This is important if you would like to add a custom navigation, footer, favicon, or use a css framework to style your documentation inline with an existing site. For example if you click on <a href="https://chrisdixononcode.dev">Home</a> and navigate back to this documentation page you will see that you have changed domains to <code>https://chrisdixoncode.dev</code> to <code>https://docs.chrisdixononcode.dev</code> and back again.</p>
+<h2 id="using-a-sub-domain-for-your-github-pages-site">Using a Sub-Domain for Your Github Pages Site</h2>
+<h3 id="update-the-domain-name-registrar">Update the Domain Name Registrar</h3>
+<p>Head over to the DNS registar where you purchased the domain you would like to sub-domain. Add a CNAME record to that domain's DNS records for it be used as your github pages new domain. For example, <code>chrisdixononcode.dev</code> is the domain. To create <code>docs.chrisdixononcode.dev</code> subdomain for <code>&lt;github_username&gt;.github.io</code> you add the following:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>RECORD TYPE: CNAME
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>NAME: docs
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>VALUE: &lt;github_username&gt;.github.io
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>TIME TO LIVE (TTL): 3600
+</span></code></pre></div>
+<p><em>Note - you can follow this format as much as you would like for repositories hosted with github pages. Just change the <code>NAME</code> value that determines the actually subdomain</em></p>
+<h3 id="update-the-repository-and-github">Update the Repository and Github</h3>
+<p>In the repository you would like to have a custom domain for add a file in your <code>docs/</code> directory called <code>CNAME</code>. Within this file write the <em>full</em> custom domain and then commit and push this file to the repository. For example:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a># first line of CNAME file
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>docs.chrisdixononcode.dev
+</span></code></pre></div>
+<p>From the Github GUI navigate to <code>Settings</code>. Under <code>Code and automation</code> click <code>Pages</code> and then under <code>Custom domain</code> add your subdomain and click <code>Save</code>. Underneath make sure <code>Enfore HTTPS</code> is checked.</p>
+<p><img alt="Where to setup a custom domain in Github GUI" src="assets/images/gh-custom-domains.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      GNU GPL v3 License
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "search.suggest", "search.share"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

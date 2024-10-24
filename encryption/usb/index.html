@@ -1,0 +1,1086 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The documentation site for my documentation.">
+      
+      
+        <meta name="author" content="Christopher Dixon">
+      
+      
+      
+        <link rel="prev" href="../../zap-full-scan/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>USB Drive Encryption - Yea Its Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#usb-drive-encryption" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Yea Its Documentation" class="md-header__button md-logo" aria-label="Yea Its Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Yea Its Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              USB Drive Encryption
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Yea Its Documentation" class="md-nav__button md-logo" aria-label="Yea Its Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Yea Its Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yea its Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../amazing_lists/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Amazing Lists for Machine Users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code_versioning_and_rollbacks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code Versioning &amp; Rolling Back Main Branch To A Prior State
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contentful_draft_mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enabling Draft Previews for Contentful Development &amp; Staging Environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker_cd_github_action/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Github Action to Deploy Dockerfile to Remote Registry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extract_tar_files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extracting Tar.gz Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gs_classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Classes for Google AppScript
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jekyll_github_pages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hosting Documentation Using Github Pages &amp; Jekyll
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux_mint_audio_issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [Solution] Linux Mint Audio Issues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux_mint_nvidia_black_screen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [Solution] Linux Mint Black Screen After Login Using Nvidia Drivers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../neovim-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neovim IDE Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pihole/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pi-hole &amp; Unbound Setup Using Docker Compose
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../poetry_ci/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python - Poetry CI Github Action
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pypi_releases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Github Actions for Releasing Python Packages to PYPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_poetry_docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python Poetry Docker Examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rar_files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extracting Rar files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zap-full-scan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Perform Weekly Security Audits with ZAProxy &amp; Github Actions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_18" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_18" id="__nav_18_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Encryption
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_18_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_18">
+            <span class="md-nav__icon md-icon"></span>
+            Encryption
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    USB Drive Encryption
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    USB Drive Encryption
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-cryptsetup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install cryptsetup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Install cryptsetup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation-on-ubuntu-and-debian-based-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation on ubuntu and debian based distributions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-on-arch-based-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation on arch based distributions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partition-usb-drive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partition USB Drive
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partition USB Drive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-a-root-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open a root shell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-2-partitions-using-fdisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create 2 partitions using fdisk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format-the-partitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Format the partitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protect-against-pattern-based-encryption-attacks-using-dd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protect against pattern based encryption attacks using dd
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encrypt-the-2nd-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encrypt the 2nd Partition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-encryption-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post Encryption Commands
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Post Encryption Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-the-encrypted-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opening the encrypted partition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#closing-the-encrypted-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing the encrypted partition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-cryptsetup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install cryptsetup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Install cryptsetup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation-on-ubuntu-and-debian-based-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation on ubuntu and debian based distributions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-on-arch-based-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation on arch based distributions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partition-usb-drive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partition USB Drive
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partition USB Drive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-a-root-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open a root shell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-2-partitions-using-fdisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create 2 partitions using fdisk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format-the-partitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Format the partitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protect-against-pattern-based-encryption-attacks-using-dd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protect against pattern based encryption attacks using dd
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encrypt-the-2nd-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encrypt the 2nd Partition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-encryption-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post Encryption Commands
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Post Encryption Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-the-encrypted-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opening the encrypted partition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#closing-the-encrypted-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing the encrypted partition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="usb-drive-encryption">USB Drive Encryption</h1>
+<h2 id="install-cryptsetup">Install <code>cryptsetup</code></h2>
+<h3 id="installation-on-ubuntu-and-debian-based-distributions">Installation on ubuntu and debian based distributions</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>cryptsetup
+</span></code></pre></div>
+<h3 id="installation-on-arch-based-distributions">Installation on arch based distributions</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo pacman -S cryptsetup
+</span></code></pre></div>
+<h2 id="partition-usb-drive">Partition USB Drive</h2>
+<h3 id="open-a-root-shell">Open a root shell</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>su
+</span></code></pre></div>
+<h3 id="create-2-partitions-using-fdisk">Create 2 partitions using fdisk</h3>
+<blockquote>
+<p>[!IMPORTANT]
+The first partition should be unencrypted and have
+a rather small volume size compared to the second encrypted volume.</p>
+</blockquote>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># find the device, typically /dev/sdX where X is unknown. See size of the device to correlate</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>fdisk<span class="w"> </span>/dev/sdX
+</span></code></pre></div>
+<p>Within Interactive mode</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a># use d to delete all partitions if there any already on the device
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Command (m for help): n # new parition
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>[Press &lt;ENTER&gt; twice]
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a># 5GB size for unencrypted volume
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-31703005, default 31703005): +5GB
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a># create 2nd parition with remaining space on device
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>Command (m for help): n
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>[Press &lt;ENTER&gt; three times]
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>Command (m for help): w
+</span></code></pre></div>
+<h3 id="format-the-partitions">Format the partitions</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>mkfs.ext4<span class="w"> </span>/dev/sdX1
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>mkfs.ext4<span class="w"> </span>/dev/sdX2
+</span></code></pre></div>
+<h3 id="protect-against-pattern-based-encryption-attacks-using-dd">Protect against pattern based encryption attacks using <code>dd</code></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>/dev/urandom<span class="w"> </span><span class="nv">of</span><span class="o">=</span>/dev/sdX2<span class="w"> </span><span class="nv">status</span><span class="o">=</span>progress
+</span></code></pre></div>
+<h2 id="encrypt-the-2nd-partition">Encrypt the 2nd Partition</h2>
+<blockquote>
+<p>[!IMPORTANT]
+You need provide a passphrase to decrypt the partition after running this command</p>
+</blockquote>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>cryptsetup<span class="w"> </span>luksFormat<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>--type<span class="w"> </span>luks2<span class="w"> </span>--cipher<span class="w"> </span>aes-xts-plain64<span class="w"> </span>--hash<span class="w"> </span>sha256<span class="w"> </span>--iter-time<span class="w"> </span><span class="m">2000</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>--key-size<span class="w"> </span><span class="m">256</span><span class="w"> </span>--pbkdf<span class="w"> </span>argon2id<span class="w"> </span>--use-urandom<span class="w"> </span>--verify-passphrase<span class="w"> </span>/dev/sdX2
+</span></code></pre></div>
+<h2 id="post-encryption-commands">Post Encryption Commands</h2>
+<h3 id="opening-the-encrypted-partition">Opening the encrypted partition</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>cryptsetup<span class="w"> </span>open<span class="w"> </span>/dev/sdX2<span class="w"> </span>device_mapper_name
+</span></code></pre></div>
+<p>The partition is now mapped to <code>/dev/mapper/&lt;device_mapper_name&gt;</code></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>mkfs.ext4<span class="w"> </span>/dev/mapper/&lt;device_mapper_name&gt;
+</span></code></pre></div>
+<p>The device partition can now be <strong>mount</strong>ed like another partition.</p>
+<h3 id="closing-the-encrypted-partition">Closing the encrypted partition</h3>
+<p><strong>unmount</strong> the partition like any other partition using the device mapped name and then close the connection.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># assuming root shell access. use sudo otherwise</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>umount<span class="w"> </span>/dev/mapper/&lt;device_mapper_name&gt;
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>cryptsetup<span class="w"> </span>lcose<span class="w"> </span>device_mapper_name
+</span></code></pre></div>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://linuxconfig.org/usb-stick-encryption-using-linux">Linux Config Tutorial</a></li>
+<li><a href="ihttps://wiki.archlinux.org/title/Dm-crypt/Device_encryption#Cryptsetup_passphrases_and_keys">Arch Wiki Device Encryption Guide</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      GNU GPL v3 License
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "search.suggest", "search.share"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
