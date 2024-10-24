@@ -13,9 +13,23 @@ theme:
     - search.share
   language: en
   palette:
-    scheme: slate
-    primary: green
-    accent: light green
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+      primary: black
+      accent: green
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+      primary: black
+      accent: green
 
 markdown_extensions:
   - attr_list
